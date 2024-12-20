@@ -1,0 +1,277 @@
+// max width 1536px
+@media (max-width: 1536px) {
+    .d-2xl-none {
+        display: none;
+    }
+    .d-2xl-block {
+        display: block;
+    }
+    .d-2xl-flex {
+        display: flex;
+    }
+    .d-2xl-grid {
+        display: grid;
+    }
+
+    // --------------------------------------------------------------------header
+
+    // --------------------------------------------------------------------index
+
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+
+    // --------------------------------------------------------------------footer
+}
+// max width 1280px
+@media (max-width: 1280px) {
+    .d-xl-none {
+        display: none;
+    }
+    .d-xl-block {
+        display: block;
+    }
+    .d-xl-flex {
+        display: flex;
+    }
+    .d-xl-grid {
+        display: grid;
+    }
+    // --------------------------------------------------------------------header
+    .logo {
+        img {
+            height: 36px;
+            width: auto;
+        }
+    }
+    // --------------------------------------------------------------------index
+
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+
+    // --------------------------------------------------------------------footer
+
+}
+// max width 1024px
+@media (max-width: 1024px) {
+    .d-lg-none {
+        display: none;
+    }
+    .d-lg-block {
+        display: block;
+    }
+    .d-lg-flex {
+        display: flex;
+    }
+    .d-lg-grid {
+        display: grid;
+    }
+ 
+    // --------------------------------------------------------------------header
+
+    // -------------------------------------------------------------------- index
+    .box-three {
+        max-width: 235px;
+    }
+    .section-septenary {
+        &__left {
+            max-width: 475px;
+        }
+        &__right {
+            max-width: 475px;
+        }
+    }
+
+    // --------------------------------------------------------------------cate
+   
+    // --------------------------------------------------------------------detail
+
+    // --------------------------------------------------------------------footer
+}
+
+// max width 992px
+@media (max-width: 992px) {
+    .d-md-none {
+        display: none;
+    }
+    .d-md-block {
+        display: block;
+    }
+    .d-md-flex {
+        display: flex;
+    }
+    .d-md-grid {
+        display: grid;
+    }
+    .w-md-500 {
+        max-width: 500px;
+        margin: auto;
+    }
+   
+    // --------------------------------------------------------------------header
+   
+    // --------------------------------------------------------------------index
+    .max-h-md-300 {
+        max-height: 300px;
+        overflow: auto;
+    }
+    
+    .block-primary {
+        display: block;
+        &__left {
+            max-width: 100%;
+            width: 100%;
+            padding-right: 0;
+            margin-right: 0;
+            border-right: none;
+        }
+
+        &__right {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+    .detail-content {
+        padding-left: 0;
+    }
+
+    // --------------------------------------------------------------------footer
+    .footer-action {
+        right: 20px;
+    }
+    
+    #back-top {
+        right: 20px;
+    }
+
+    .footer {
+        &-content {
+            .left {
+                margin-bottom: 24px;
+            }
+
+            .center {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+// max width 767px
+@media (max-width: 767px) {
+    .d-sm-none {
+        display: none;
+    }
+    .d-sm-block {
+        display: block;
+    }
+    .d-sm-flex {
+        display: flex;
+    }
+    .d-sm-grid {
+        display: grid;
+    }
+    
+    // --------------------------------------------------------------------header
+
+    // --------------------------------------------------------------------index
+    .swiper-button-next, .swiper-button-prev {
+        width: 32px;
+        height: 32px;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 999px;
+        background-color: #99333370;
+    }
+    
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 12px;
+    }
+    
+ 
+    // --------------------------------------------------------------------cate
+
+    // --------------------------------------------------------------------detail
+    .detail-title {
+        font-size: 24px;
+    }
+    .detail-content {
+
+        & figure {
+            margin-bottom: 15px;
+            
+            figcaption {
+                padding: 8px 10px;
+                font-size: 14px;
+            }
+            img {
+                border-radius: 15px;
+            }
+        }
+        
+
+        & p,
+        & li {
+            font-size: 16px;
+    
+        }
+        &  h2 {
+            font-size: 20px;
+        }
+        &  h3 {
+            font-size: 18px;
+        }
+        & h4 {
+            font-size: 16px;
+        }
+        &  h5 {
+            font-size: 16px;
+        }
+        & h6 {
+            font-size: 16px;
+        }
+    
+        & blockquote {
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+    
+            & p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // --------------------------------------------------------------------footer
+    
+}
+
+
+// max-width: 400px
+@media (max-width:400px) {
+    .d-none {
+        display: none;
+    }
+    .d-block {
+        display: block;
+    }
+    .d-flex {
+        display: flex;
+    }
+    .d-grid {
+        display: grid;
+    }
+    // --------------------------------------------------------------------header
+    // --------------------------------------------------------------------index
+    // --------------------------------------------------------------------cate
+    // --------------------------------------------------------------------detail
+    // --------------------------------------------------------------------footer
+}
