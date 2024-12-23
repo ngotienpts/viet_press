@@ -92,22 +92,35 @@
 .radio-box {
     max-width: 350px;
     width: 100%;
-
-    .radio-play {
-        cursor: pointer;
-        padding: 4px;
-        img {
-            width: 15px;
-            height: auto;
+    
+    .radio-content {
+        &.active {
+            .radio-play {
+                display: none;
+            }
+            .radio-pause {
+                display: block;
+            }
         }
-    }
-    .radio-pause {
-        display: none;
-        cursor: pointer;
-        padding: 4px;
-        img {
-            width: 15px;
-            height: auto;
+        .radio-control {
+            width: 20px;
+        }
+        .radio-play {
+            cursor: pointer;
+            padding: 4px;
+            img {
+                height: 16px;
+                width: auto;
+            }
+        }
+        .radio-pause {
+            display: none;
+            cursor: pointer;
+            padding: 4px;
+            img {
+                height: 16px;
+                width: auto;
+            }
         }
     }
     .radio-text {
@@ -129,6 +142,12 @@
     .radio-speed {
         position: relative;
         font-size: 12px;
+
+        &.active {
+            .speed-option {
+                display: block;
+            }
+        }
 
         .speed-default {
             cursor: pointer;
@@ -195,6 +214,12 @@
 
     .radio-voice {
         position: relative;
+
+        &.active {
+            .radio-voice__option {
+                display: block;
+            }
+        }
 
         &__default {
             cursor: pointer;
@@ -413,6 +438,10 @@
         color: #333;
 
     }
+
+    // &.size-plus p {
+    //     font-size: 21px;
+    // }
     & ul {
         padding-left: 30px;
     }

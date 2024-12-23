@@ -529,32 +529,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
      // Xử lý tăng giảm font size
     function handleChangeFontSize() {
-        var sizeDefaults = document.querySelectorAll('.size-default');
-        var sizePlus = document.querySelectorAll('.size-plus');
-        if(sizePlus.length > 0 && sizeDefaults.length > 0){
-        size = parseInt(window.getComputedStyle(document.querySelector(".js_change_size")).fontSize, 10);
-        size2 = parseInt(window.getComputedStyle(document.querySelector(".js_change_size2")).fontSize, 10);
-        size3 = parseInt(window.getComputedStyle(document.querySelector(".js_change_size3")).fontSize, 10);
+        const changeSizeButtonContainers = document.querySelectorAll('.js__changeSizeButton');
 
-        sizePlus.forEach((item)=>{
-            item.onclick = function(){
-            document.querySelector(".js_change_size").style.fontSize = (size + 2) + "px";
-            document.querySelector(".js_change_size2").style.fontSize = (size2 + 2) + "px";
-            document.querySelector(".js_change_size3").style.fontSize = (size3 + 2) + "px";
-            document.querySelector(".js_change_size3").classList.add('plusSize');
-            }
-        })
+        if(changeSizeButtonContainers.length === 0) return
 
-        sizeDefaults.forEach((item)=>{
-            item.onclick = function(){
-            document.querySelector(".js_change_size").style.fontSize = size + "px";
-            document.querySelector(".js_change_size2").style.fontSize = size2 + "px";
-            document.querySelector(".js_change_size3").style.fontSize = size3 + "px";
-            document.querySelector(".js_change_size3").classList.remove('plusSize');
-            }
-        })
-        }
-
+        changeSizeButtonContainers.forEach((changeSizeButtonContainer) => {
+            const sizeDefault = changeSizeButtonContainer.querySelector('.js__defaultSize');
+            const sizePlus = changeSizeButtonContainer.querySelector('.js__plusSize');
+    
+            const sizeContent = document.querySelector(".js__changeSizeContent");
+            const paragraphs = sizeContent.querySelectorAll("p");
+            let increaseCount = 0;
+            const maxIncrease = 3;
+    
+            // Lưu kích thước mặc định ban đầu của từng thẻ <p>
+            const defaultFontSizes = Array.from(paragraphs).map((p) =>
+                parseInt(window.getComputedStyle(p).fontSize)
+            );
+    
+            sizePlus.onclick = function () {
+                if (increaseCount < maxIncrease) {
+                    increaseCount++;
+                    paragraphs.forEach((paragraph, index) => {
+                        const newFontSize = defaultFontSizes[index] + increaseCount + "px";
+                        paragraph.style.fontSize = newFontSize;
+                    });
+                }
+            };
+    
+            sizeDefault.onclick = function () {
+                if (increaseCount > 0) {
+                    increaseCount--;
+                    paragraphs.forEach((paragraph, index) => {
+                        const newFontSize = defaultFontSizes[index] + increaseCount + "px";
+                        paragraph.style.fontSize = newFontSize;
+                    });
+                }
+            };
+        });
     }
 
     // Xử lý thanh header dính
@@ -619,6 +631,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // end slide
         handleBackTop();
         handleChangeTab();
+        handleChangeFontSize();
         window.addEventListener('scroll',handleWindowScroll);
         window.addEventListener('resize',handleWindowScroll);
     }

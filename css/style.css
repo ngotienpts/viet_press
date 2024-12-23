@@ -2831,6 +2831,7 @@ p {
 .section-secondary__left .breadcrumb-primary {
   position: relative;
   padding-right: 90px;
+  width: 100%;
 }
 
 .section-tertiary__container {
@@ -3049,22 +3050,31 @@ p {
   max-width: 350px;
   width: 100%;
 }
-.radio-box .radio-play {
+.radio-box .radio-content.active .radio-play {
+  display: none;
+}
+.radio-box .radio-content.active .radio-pause {
+  display: block;
+}
+.radio-box .radio-content .radio-control {
+  width: 20px;
+}
+.radio-box .radio-content .radio-play {
   cursor: pointer;
   padding: 4px;
 }
-.radio-box .radio-play img {
-  width: 15px;
-  height: auto;
+.radio-box .radio-content .radio-play img {
+  height: 16px;
+  width: auto;
 }
-.radio-box .radio-pause {
+.radio-box .radio-content .radio-pause {
   display: none;
   cursor: pointer;
   padding: 4px;
 }
-.radio-box .radio-pause img {
-  width: 15px;
-  height: auto;
+.radio-box .radio-content .radio-pause img {
+  height: 16px;
+  width: auto;
 }
 .radio-box .radio-text {
   display: inline-block;
@@ -3083,6 +3093,9 @@ p {
 .radio-box .radio-speed {
   position: relative;
   font-size: 12px;
+}
+.radio-box .radio-speed.active .speed-option {
+  display: block;
 }
 .radio-box .radio-speed .speed-default {
   cursor: pointer;
@@ -3142,6 +3155,9 @@ p {
 }
 .radio-box .radio-voice {
   position: relative;
+}
+.radio-box .radio-voice.active .radio-voice__option {
+  display: block;
 }
 .radio-box .radio-voice__default {
   cursor: pointer;
