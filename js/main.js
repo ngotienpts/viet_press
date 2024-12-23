@@ -154,6 +154,45 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }
     }
+
+    // khởi tạo slider với 2 item
+    function initSliderTwoSecondaryItems() {
+        const twoSlides = document.querySelectorAll(".js__twoSecondarySlidesContainer");
+        if (twoSlides) {
+            twoSlides.forEach((item) => {
+                var slider = item.querySelector(".js__twoSlide");
+                var next = item.querySelector(".swiper-button-next");
+                var prev = item.querySelector(".swiper-button-prev");
+                var pagi = item.querySelector(".swiper-pagination");
+                new Swiper(slider, {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    slidesPerGroup: 1,
+                    navigation: {
+                        nextEl: next || null,
+                        prevEl: prev || null,
+                    },
+                    pagination: {
+                        el: pagi || null,
+                        clickable: true,
+                    },
+                    // autoplay: {
+                    //     delay: 3000,
+                    //     disableOnInteraction: false,
+                    // },
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 1,
+                        },
+                        1024: {
+                            slidesPerView: 2,
+                            spaceBetween: 15,
+                        }
+                    },
+                });
+            });
+        }
+    }
     // khởi tạo slider với 3 item
     function initSliderThreeItems() {
         const threeSlides = document.querySelectorAll(".js__threeSlidesContainer");
@@ -488,6 +527,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
+     // Xử lý tăng giảm font size
+    function handleChangeFontSize() {
+        var sizeDefaults = document.querySelectorAll('.size-default');
+        var sizePlus = document.querySelectorAll('.size-plus');
+        if(sizePlus.length > 0 && sizeDefaults.length > 0){
+        size = parseInt(window.getComputedStyle(document.querySelector(".js_change_size")).fontSize, 10);
+        size2 = parseInt(window.getComputedStyle(document.querySelector(".js_change_size2")).fontSize, 10);
+        size3 = parseInt(window.getComputedStyle(document.querySelector(".js_change_size3")).fontSize, 10);
+
+        sizePlus.forEach((item)=>{
+            item.onclick = function(){
+            document.querySelector(".js_change_size").style.fontSize = (size + 2) + "px";
+            document.querySelector(".js_change_size2").style.fontSize = (size2 + 2) + "px";
+            document.querySelector(".js_change_size3").style.fontSize = (size3 + 2) + "px";
+            document.querySelector(".js_change_size3").classList.add('plusSize');
+            }
+        })
+
+        sizeDefaults.forEach((item)=>{
+            item.onclick = function(){
+            document.querySelector(".js_change_size").style.fontSize = size + "px";
+            document.querySelector(".js_change_size2").style.fontSize = size2 + "px";
+            document.querySelector(".js_change_size3").style.fontSize = size3 + "px";
+            document.querySelector(".js_change_size3").classList.remove('plusSize');
+            }
+        })
+        }
+
+    }
+
     // Xử lý thanh header dính
     function handleStickyHeader() {
         const stickyHeaderPC = document.querySelector(".js__stickyHeader");
@@ -545,6 +614,7 @@ document.addEventListener("DOMContentLoaded", function () {
         initSliderAutoItems();
         initSliderOneItems();
         initSliderTwoItems();
+        initSliderTwoSecondaryItems();
         initSliderFiveItems();
         // end slide
         handleBackTop();
