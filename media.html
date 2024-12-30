@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/gif" sizes="16x16" />
+        <!-- end favicon -->
+        <title>Trang thông tin tổng hợp VietPress</title>
+        <!-- font -->
+     
+        <!-- end font -->
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./lib/jquery/jquery-3.7.1.min.js"></script>
+    </head>
+
+    <body>
+        <!-- popup login -->
+        <div class="login" style="position: relative;z-index: 1000;">
+            <div class="not-logged">
+                <div class="js__popupLoginContainer">
+                    <div class="content text-white js__popupLogin">
+                        <!-- top -->
+                        <div class="content-top d-3xl-flex items-center justify-between border-b-e5 pb-16 w-full">
+                            <div class="content-top__logo">
+                                <img src="./images/svg/logo.svg" alt="">
+                            </div>
+                            <div class="content-top__close pointer js__closePopupLogin">
+                                <img src="./images/svg/close-gray.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- end top -->
+        
+                        <!-- main -->
+                        <div class="content-main w-full js__loginContainerForm">
+                            <!-- login -->
+                            <div class="content-main__login active js__loginForm">
+                                <!-- heading -->
+                                <div class="heading d-3xl-flex items-center justify-center border-b-e5 w-full mt-20">
+                                    <span class="heading-1 fs-24 text-gray-66 active">Đăng nhập</span>
+                                    <span class="heading-2 fs-24 text-gray-66 js__registerBtn">Đăng ký</span>
+                                </div>
+                                <!-- end heading -->
+        
+                                <!--  -->
+                                <ul class="social d-3xl-flex justify-center d-md-none items-center my-16">
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/fb-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/twitter-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/instagram-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/zalo-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                   
+                                 </ul>
+                                <!--  -->
+        
+                                <div>
+                                    <p class="text-center fs-15 fw-600 lh-140 text-gray-44 mb-10 ">hoặc</p>
+                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 ">Vui lòng nhập thông tin cá nhân</p>
+                                </div>
+        
+                                <!-- form -->
+                                <div class="form form-container mb-10">
+                                    <form action="">
+                                        <div class="form-group mb-10">
+                                            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                                            <p class="mess-error">Tên đăng nhập không chính xác</p>
+                                        </div>
+                                        <div class="form-group mb-10">
+                                            <input type="password" class="form-input" placeholder="Mật khẩu">
+                                            <p class="mess-error">Mật khẩu không đúng</p>
+                                        </div>
+        
+                                        <button class="btn form-submit">Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+        
+                                <button class="btn btn-forgot js__forgotBtn">Quên mật khẩu</button>
+                            </div>
+                            <!-- end login -->
+                            <!-- register -->
+                            <div class="content-main__register js__registerForm">
+                                <!-- heading -->
+                                <div class="heading d-3xl-flex items-center justify-center border-b-e5 w-full mt-20">
+                                    <span class="heading-1 fs-24 fw-700 text-gray-66 js__loginBtn">Đăng nhập</span>
+                                    <span class="heading-2 fs-24 fw-700 text-gray-66 active">Đăng ký</span>
+                                </div>
+                                <!-- end heading -->
+        
+                                <!--  -->
+                                <ul class="social d-3xl-flex justify-center d-md-none items-center my-16">
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/fb-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/twitter-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/instagram-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/zalo-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                 </ul>
+                                <!--  -->
+        
+                                <div>
+                                    <p class="text-center fs-15 fw-600 lh-140 text-gray-44 mb-10 ">hoặc</p>
+                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 ">Vui lòng nhập thông tin cá nhân</p>
+                                </div>
+        
+                                <!-- form -->
+                                <div class="form form-container mb-10">
+                                    <form action="">
+                                        <div class="form-group mb-10">
+                                            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                                            <p class="mess-error">Tên đăng nhập không chính xác</p>
+                                        </div>
+                                        <div class="form-group mb-10">
+                                            <input type="password" class="form-input" placeholder="Mật khẩu">
+                                            <p class="mess-error">Mật khẩu không đúng</p>
+                                        </div>
+                                        <div class="form-group mb-10">
+                                            <input type="email" class="form-input" placeholder="Email">
+                                            <p class="mess-error">Email không hợp lệ</p>
+                                        </div>
+        
+                                        <button class="btn form-submit">Đăng ký</button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end register -->
+                            <!-- forgotpassword -->
+                            <div class="content-main__forgot js__forgotForm">
+                                <!-- heading -->
+                                <div class="heading d-3xl-flex items-center justify-center border-b-e5 w-full my-20">
+                                    <span class="heading-1 fs-24 fw-700 text-gray-66 active">Đặt lại mật khẩu</span>
+                                </div>
+                                <!-- end heading -->
+                                <div>
+                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 ">Nhập email của bạn để lấy lại mật khẩu</p>
+                                </div>
+                                <!-- form -->
+                                <div class="form form-container mb-10">
+                                    <form action="">
+                                        <div class="form-group mb-10">
+                                            <input type="email" class="form-input" placeholder="Email">
+                                            <p class="mess-error">Email không đúng</p>
+                                        </div>
+        
+                                        <button class="btn form-submit">Lấy lại mật khẩu</button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end forgotpassword -->
+                        </div>
+                        <!-- end main -->
+                    </div>
+                    <div class="overlay js__overlay"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end popup login -->
+        <!-- header -->
+        <header id="header" class="header relative z-50 js__stickyHeader">
+            <!-- pc -->
+            <div class="d-3xl-block d-xl-none">
+                <div class="header-desk relative z-10">
+                    <!-- top -->
+                    <div class="header-desk-top bg-red-b80 w-wrapper">
+                        <div class="header-desk-top__container w-1140 d-3xl-flex items-center justify-between">
+                            <!-- left -->
+                            <div class="left d-3xl-flex items-center">
+                                <!-- extend bar -->
+                                <div class="navbar-more mr-10 js__navbarMore">
+                                    <!-- icon -->
+                                    <div class="navbar-more__icon icon-24 js__navbarMoreIcon">
+                                        <img src="./images/svg/bar-w.svg" alt="">
+                                    </div>
+                                    <!-- end icon -->
+                                    
+                                    <!-- content -->
+                                    <div class="navbar-more__content w-wrapper js__navbarMoreContent">
+                                        <div class="navbar-more__inner w-1140 scroll">
+                                            <ul class="navbar-more__list d-3xl-grid gap-24">
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- end content -->
+                                </div>
+                                <!-- end extend bar -->
+    
+                                <!-- search desk -->
+                                <div class="search-desk fs-14 mr-10">
+                                    <form action="" class="relative">
+                                        <input type="hidden" name="mod" value="archive">
+                                        <input type="hidden" name="act" value="search">
+                                        <input name="search" type="text" class="search-input fs-14 w-full h-full" placeholder="Tìm kiếm">
+                                        <button class="search-btn">
+                                            <img src="./images/svg/search-w.svg" loading="lazy" alt="" width="12" height="12">
+                                        </button>
+                                    </form>
+                                </div>
+                                <!-- end search desk -->
+
+                                <!-- wether -->
+                                <div class="wether js__collapseContainer">
+                                    <div class="wether-container">
+                                        <div class="wether-selected d-3xl-flex items-center js__collapse pointer">
+                                            <div class="wether-item fs-14 text-white flex-1 d-3xl-flex items-center">
+                                                <span class="wether-city fw-700 d-3xl-inline-block">Hà Nội</span>
+                                                <span class="wether-temperature d-3xl-inline-block px-4">26°C / 22 - 25°C</span>
+                                                <span class="wether-status icon-20 d-3xl-inline-block flex-0 p-4">
+                                                    <img src="./images/svg/sunny.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="wether-icon-down icon-12 p-4 flex-0">
+                                                <img src="./images/svg/triangle-down-w.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- list -->
+                                        <ul class="wether-list scroll shadow">
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                        </ul>
+                                        <!-- end list -->
+                                    </div>
+                                </div>
+                                <!-- end wether -->
+                            </div>
+                            <!-- end left -->
+
+                            <!-- right -->
+                            <div class="right d-3xl-flex items-center">
+                                <!-- social -->
+                                <ul class="social d-3xl-flex items-center">
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/fb-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/twitter-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/instagram-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/zalo-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- end social -->
+
+                                <!-- login -->
+                                <div class="login ml-16">
+                                    <!-- not logged -->
+                                    <div class="not-logged">
+                                        <!-- icon -->
+                                        <div class="login-icon js__showPopupLogin">
+                                            <img src="./images/svg/user-w.svg" alt="">
+                                        </div>
+                                        <!-- end icon -->
+                                        
+                                    </div>
+                                    <!-- end not logged -->
+                                    
+                                    <!-- logged -->
+                                    <div class="logged d-3xl-none">
+                                        <div class="logged-container relative js__dropdownContainer">
+                                            <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                                <h3 class="text fs-14 fw-700 mr-8 d-sm-none">Thanh Hoài</h3>
+                                                <div class="avatar mr-4">
+                                                    <img src="./images/3.jpg" alt="">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./images/svg/triangle-down-gray.svg" alt="">
+                                                </div>
+                                            </div>
+                
+                                            <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                                <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                                <li class="logged-item log-out">Đăng xuất</li>
+                                            </ul>
+                
+                                            <div class="overlay js__overlay"></div>
+                                        </div>
+                                    </div>
+                                    <!-- end logged -->
+                                </div>
+                                <!-- end login -->
+                            </div>
+                            <!-- end right -->
+                        </div>
+                    </div>
+                    <!-- end top -->
+                    
+                    <!-- center -->
+                    <div class="header-desk-center bg-white-f1 w-wrapper">
+                        <div class="header-desk-center__container w-1140 d-3xl-flex items-center py-20">
+                            <!-- left -->
+                            <div class="left flex-0">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a href="#" class="logo-link">
+                                        <img src="./images/svg/logo.svg" alt="" class="logo-img">
+                                    </a>
+                                </div>
+                                <!-- end logo -->
+                            </div>
+                            <!-- end left -->
+                            
+                            <!-- right -->
+                            <div class="right flex-1 pl-30">
+                                <!-- exchange rate -->
+                                <div class="exchange-rate exchange-rate__slide slider-auto js__autoSlideContainer">
+                                    <div class="swiper js__swiperAuto">
+                                        <div class="swiper-wrapper">
+                                            <!-- slide -->
+                                            <div class="swiper-slide">
+                                                <!-- gold -->
+                                                <div class="exchange-rate__item border-e5 round-3xl-6 over-hidden bg-white exchange-rate__gold px-4 py-8 d-3xl-flex items-center">
+                                                    <!-- exchange-rate__icon -->
+                                                    <div class="exchange-rate__icon d-3xl-flex items-center">
+                                                        <div class="icon icon-20 flex-0">
+                                                            <img src="./images/svg/gold.svg" alt="" style="width: 20px;height: auto;">
+                                                        </div>
+                                                        <div class="text fs-12 fw-700 flex-1 ml-4 text-yellow-e5 text-center">
+                                                            <span class="d-3xl-block">Giá</span>
+                                                            <span class="d-3xl-block">vàng</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end exchange-rate__icon -->
+
+                                                    <!-- exchange-rate__content -->
+                                                    <div class="exchange-rate__content pl-8 ml-8">
+                                                        <!-- item -->
+                                                        <div class="item d-3xl-flex items-center fs-12">
+                                                            <span class="name d-3xl-inline-block p-4 uppercase">SJC</span>
+                                                            <div class="purchase-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block text-gray-73 p-4">Mua</span>
+                                                                <span class="number d-3xl-inline-block text-gray-44 fw-700 p-4">82,000</span>
+                                                            </div>
+                                                            <div class="selling-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block p-4">Bán</span>
+                                                                <span class="number d-3xl-inline-block p-4">82,800</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end item -->
+                                                        <!-- item -->
+                                                        <div class="item d-3xl-flex items-center fs-12">
+                                                            <span class="name d-3xl-inline-block p-4 uppercase">SJC</span>
+                                                            <div class="purchase-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block text-gray-73 p-4">Mua</span>
+                                                                <span class="number d-3xl-inline-block text-gray-44 fw-700 p-4">82,000</span>
+                                                            </div>
+                                                            <div class="selling-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block p-4">Bán</span>
+                                                                <span class="number d-3xl-inline-block p-4">82,800</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end item -->
+                                                    </div>
+                                                    <!-- end exchange-rate__content -->
+
+                                                    <!-- arrow -->
+                                                    <div class="exchange-rate__arrow pl-10">
+                                                        <img src="./images/svg/arrow-next-gray.svg" alt="">
+                                                    </div>
+                                                    <!-- end arrow -->
+                                                </div>
+                                                <!-- end gold -->
+                                            </div>
+                                            <!-- end slide -->
+                                            <!-- slide -->
+                                            <div class="swiper-slide">
+                                                <!-- money -->
+                                                <div class="exchange-rate__item border-e5 round-3xl-6 over-hidden bg-white exchange-rate__money px-4 py-8 d-3xl-flex items-center">
+                                                    <!-- exchange-rate__icon -->
+                                                    <div class="exchange-rate__icon d-3xl-flex items-center">
+                                                        <div class="icon icon-12 flex-0">
+                                                            <img src="./images/svg/usd-blue.svg" alt="" style="width: 12px;height: auto;">
+                                                        </div>
+                                                        <div class="text fs-12 fw-700 flex-1 ml-4 text-blue-439 text-center">
+                                                            <span class="d-3xl-block">Tỷ</span>
+                                                            <span class="d-3xl-block">giá</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end exchange-rate__icon -->
+
+                                                    <!-- exchange-rate__content -->
+                                                    <div class="exchange-rate__content pl-8 ml-8">
+                                                        <!-- item -->
+                                                        <div class="item d-3xl-flex items-center fs-12">
+                                                            <span class="name d-3xl-inline-block p-4 uppercase">SJC</span>
+                                                            <div class="purchase-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block text-gray-73 p-4">Mua</span>
+                                                                <span class="number d-3xl-inline-block text-gray-44 fw-700 p-4">82,000</span>
+                                                            </div>
+                                                            <div class="selling-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block p-4">Bán</span>
+                                                                <span class="number d-3xl-inline-block p-4">82,800</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end item -->
+                                                        <!-- item -->
+                                                        <div class="item d-3xl-flex items-center fs-12">
+                                                            <span class="name d-3xl-inline-block p-4 uppercase">SJC</span>
+                                                            <div class="purchase-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block text-gray-73 p-4">Mua</span>
+                                                                <span class="number d-3xl-inline-block text-gray-44 fw-700 p-4">82,000</span>
+                                                            </div>
+                                                            <div class="selling-price d-3xl-flex items-center">
+                                                                <span class="txt d-3xl-inline-block p-4">Bán</span>
+                                                                <span class="number d-3xl-inline-block p-4">82,800</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end item -->
+                                                    </div>
+                                                    <!-- end exchange-rate__content -->
+
+                                                    <!-- arrow -->
+                                                    <div class="exchange-rate__arrow pl-10">
+                                                        <img src="./images/svg/arrow-next-gray.svg" alt="">
+                                                    </div>
+                                                    <!-- end arrow -->
+                                                </div>
+                                                <!-- end money -->
+                                            </div>
+                                            <!-- end slide -->
+                                            <!-- slide -->
+                                            <div class="swiper-slide">
+                                                <!-- stock -->
+                                                <div class="exchange-rate__item border-e5 round-3xl-6 over-hidden bg-white exchange-rate__stock px-4 py-8 d-3xl-flex items-center">
+                                                    <!-- exchange-rate__icon -->
+                                                    <div class="exchange-rate__icon d-3xl-flex items-center">
+                                                        <div class="icon icon-20 flex-0">
+                                                            <img src="./images/svg/stock-cyan.svg" alt="">
+                                                        </div>
+                                                        <div class="text fs-12 fw-700 flex-1 ml-4 text-cyan-1e text-center">
+                                                            <span class="d-3xl-block">Chứng</span>
+                                                            <span class="d-3xl-block">khoán</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end exchange-rate__icon -->
+
+                                                    <!-- exchange-rate__content -->
+                                                    <div class="exchange-rate__content pl-8 ml-8">
+                                                        <!-- item -->
+                                                        <div class="item d-3xl-flex items-center fs-12">
+                                                            <span class="name d-3xl-inline-block p-4 uppercase">VN-INDEX</span>
+                                                            <div class="purchase-price d-3xl-flex items-center">
+                                                                
+                                                                <span class="number d-3xl-inline-block text-gray-44 fw-700 p-4">1267.54</span>
+                                                            </div>
+                                                            <div class="up-trend d-3xl-flex items-center">
+                                                                <div class="img flex-0 icon-12">
+                                                                    <img src="./images/svg/triangle-up-green.svg" alt="">
+                                                                </div>
+                                                                <span class="txt flex-1 d-3xl-inline-block p-4">0.61%</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end item -->
+                                                        <!-- item -->
+                                                        <div class="item d-3xl-flex items-center fs-12">
+                                                            <span class="name d-3xl-inline-block p-4 uppercase">VN30-INDEX</span>
+                                                            <div class="purchase-price d-3xl-flex items-center">
+                                                                
+                                                                <span class="number d-3xl-inline-block text-gray-44 fw-700 p-4">1267.54</span>
+                                                            </div>
+                                                            <div class="down-trend d-3xl-flex items-center">
+                                                                <div class="img flex-0 icon-12">
+                                                                    <img src="./images/svg/triangle-down-red.svg" alt="">
+                                                                </div>
+                                                                <span class="txt flex-1 d-3xl-inline-block p-4">0.61%</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- end item -->
+                                                        
+                                                    </div>
+                                                    <!-- end exchange-rate__content -->
+
+                                                    <!-- arrow -->
+                                                    <div class="exchange-rate__arrow pl-10">
+                                                        <img src="./images/svg/arrow-next-gray.svg" alt="">
+                                                    </div>
+                                                    <!-- end arrow -->
+                                                </div>
+                                                <!-- end stock -->
+                                            </div>
+                                            <!-- end slide -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end exchange rate -->
+                            </div>
+                            <!-- end right -->
+                        </div>
+                    </div>
+                    <!-- end center -->
+
+                    <!-- menu -->
+                    <div class="header-desk-menu bg-white w-wrapper border-b-e5">
+                        <div class="header-desk-menu__container w-1140 d-3xl-flex items-center justify-between">
+                            <!-- navbar -->
+                            <nav class="navbar flex-1">
+                                <ul class="navbar-wrapper d-3xl-flex items-center justify-between">
+                                    <li class="navbar-item flex-0">
+                                        <a href="#" class="icon-16">
+                                            <img src="./images/svg/home-red.svg" alt="" class="">
+                                        </a>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Xã hội</a>
+                                            
+                                        </div>
+                                        <ul class="navbar-dropdown fs-14 scroll">
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Trong nước</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Quốc tế</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Tin phật sự</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Tin mới</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Kinh doanh</a>
+                                        </div>
+                                        <ul class="navbar-dropdown fs-14 scroll">
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Trong nước</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Quốc tế</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Tin phật sự</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Tin mới</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Tiêu dùng thông minh</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Giải trí</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Đời sống</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Thể thao</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Công nghệ - xe</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Thế giới</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Góc chuyên gia</a>
+                                        </div>
+                                    </li>
+                                    <li class="navbar-item">
+                                        <div class="navbar-item__heading d-3xl-flex items-center uppercase fw-600 fs-16">
+                                            <a href="#" class="navbar-item__text flex-1 d-3xl-inline-block">Media</a>
+                                            
+                                        </div>
+                                        <ul class="navbar-dropdown fs-14 scroll">
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Trong nước</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Quốc tế</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Tin phật sự</a>
+                                            </li>
+                                            <li class="navbar-dropdown__item">
+                                                <a href="#" class="navbar-dropdown__link">Tin mới</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    
+                                </ul>
+                            </nav>
+                            <!-- end navbar -->
+                        </div>
+                    </div>
+                   
+                    <!-- end menu -->
+
+                    
+                </div>
+            </div>
+            <!-- end pc -->
+             
+            <!-- mb -->
+            <div class="d-3xl-none d-xl-block">
+                <div class="header-mb relative z-10">
+                   <!-- top -->
+                    <div class="header-mb-top w-wrapper bg-red-b80">
+                        <div class="header-mb-top__container w-1140 d-3xl-flex items-center justify-between py-10">
+                            <!-- left -->
+                            <div class="left flex-0 mr-10">
+                                <!-- submenu -->
+                                <div class="sub-menu">
+                                    <!-- icon bar -->
+                                    <div class="icon-bar js__clickShowMenuMb">
+                                        <img src="./images/svg/bar-w.svg" alt="">
+                                    </div>
+                                    <!-- end icon bar -->
+                                    <!-- content -->
+                                    <div class="sub-menu__content">
+                                        <!-- close -->
+                                        <div class="sub-menu__close js__closeSubMenu d-3xl-flex items-center">
+                                            <img src="./images/svg/close-gray.svg" alt="">
+                                        </div>
+                                        <!-- end close -->
+    
+                                        <div class="sub-menu__container">
+                                            <!-- list -->
+                                            <div class="sub-menu__list">
+                                                <!-- item -->
+                                                <div class="sub-menu__item px-20">
+                                                    <!-- heading -->
+                                                    <div class="heading-sub d-3xl-flex items-center justify-between py-8 text-red-993">
+                                                        <h3 class="heading-sub__title fs-14 fw-500 uppercase">
+                                                            <a href="#">Tin tức</a>
+                                                        </h3>
+                                                        <div class="heading-sub__arrow js__dropDown">
+                                                            <img src="./images/svg/arrow-down-gray.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end heading -->
+    
+                                                    <!-- sub menu list -->
+                                                    <ul class="list-sub js__listSubMenu">
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- end sub menu list -->
+                                                </div>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <div class="sub-menu__item px-20">
+                                                    <!-- heading -->
+                                                    <div class="heading-sub d-3xl-flex items-center justify-between py-8 text-red-993">
+                                                        <h3 class="heading-sub__title fs-14 fw-500 uppercase">
+                                                            <a href="#">Tin tức</a>
+                                                        </h3>
+                                                        <div class="heading-sub__arrow js__dropDown">
+                                                            <img src="./images/svg/arrow-down-gray.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end heading -->
+    
+                                                    <!-- sub menu list -->
+                                                    <ul class="list-sub js__listSubMenu">
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- end sub menu list -->
+                                                </div>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <div class="sub-menu__item px-20">
+                                                    <!-- heading -->
+                                                    <div class="heading-sub d-3xl-flex items-center justify-between py-8 text-red-993">
+                                                        <h3 class="heading-sub__title fs-14 fw-500 uppercase">
+                                                            <a href="#">Tin tức</a>
+                                                        </h3>
+                                                        <div class="heading-sub__arrow js__dropDown">
+                                                            <img src="./images/svg/arrow-down-gray.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end heading -->
+    
+                                                    <!-- sub menu list -->
+                                                    <ul class="list-sub js__listSubMenu">
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- end sub menu list -->
+                                                </div>
+                                                <!-- end item -->
+                                               
+                                               
+                                            </div>
+                                            <!-- end list -->
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                    <div class="overlay js__overlay"></div>
+                                </div>
+                                <!-- end submenu -->
+                            </div>
+                            <!-- end left -->
+                            <!-- right -->
+                            <div class="right flex-1 d-3xl-flex items-center justify-end">
+                                <!-- wether -->
+                                <div class="wether js__collapseContainer">
+                                    <div class="wether-container">
+                                        <div class="wether-selected d-3xl-flex items-center js__collapse pointer">
+                                            <div class="wether-item fs-14 text-white flex-1 d-3xl-flex items-center">
+                                                <span class="wether-city fw-700 d-3xl-inline-block">Hà Nội</span>
+                                                <span class="wether-temperature d-3xl-inline-block px-4">26°C / 22 - 25°C</span>
+                                                <span class="wether-status icon-20 d-3xl-inline-block flex-0 p-4">
+                                                    <img src="./images/svg/sunny.svg" alt="">
+                                                </span>
+                                            </div>
+                                            <div class="wether-icon-down icon-12 p-4 flex-0">
+                                                <img src="./images/svg/triangle-down-w.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <!-- list -->
+                                        <ul class="wether-list scroll shadow">
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                            <!-- item -->
+                                            <li class="wether-item fs-14 fw-700 text-gray-33 px-15 py-10 d-3xl-block">Hà Nội</li>
+                                            <!-- end item -->
+                                        </ul>
+                                        <!-- end list -->
+                                    </div>
+                                </div>
+                                <!-- end wether -->
+                            </div>
+                            <!-- end right -->
+                        </div>
+                    </div>
+                   <!-- end top -->
+                   <!-- bot -->
+                    <div class="header-mb-bot w-wrapper bg-white-f1 border-e5">
+                        <div class="header-mb-bot__container w-1140 d-3xl-flex items-center justify-between py-10">
+                            <!-- left -->
+                            <div class="left">
+                                <!-- logo -->
+                                <div class="logo">
+                                    <a href="#" class="logo-link">
+                                        <img src="./images/svg/logo.svg" alt="" class="logo-img">
+                                    </a>
+                                </div>
+                                <!-- end logo -->
+                            </div>
+                            <!-- end left -->
+    
+                            <!-- right -->
+                            <div class="right d-3xl-flex items-center justify-end">
+                                <!-- search mb -->
+                                <div class="search-mb">
+                                    <div class="search-mb__icon js__searchMb">
+                                        <img src="./images/svg/search-gray.svg" alt="">
+                                    </div>
+                                    <!-- form -->
+                                    <div class="header-search-mb__form h-60 w-full js__formSearchMb shadow">
+                                        <form action="" class="w-full h-full">
+                                            <div class="relative w-full h-full">
+                                                <input type="text" class="header-search-input w-full h-full p-8 fs-16 js__focusSearchMb" placeholder="Search...">
+                                                <div class="header-search-btn absolute h-full d-3xl-flex items-center p-8 js__closeSearchMb icon-20">
+                                                    <img src="./images/svg/close-gray.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!-- end form -->
+                                </div>
+                                <!-- end search mb -->
+
+                                <!-- login -->
+                                <div class="login ml-10">
+                                    <!-- not logged -->
+                                    <div class="not-logged">
+                                        <!-- icon -->
+                                        <div class="login-icon js__showPopupLogin">
+                                            <img src="./images/svg/user.svg" alt="">
+                                        </div>
+                                        <!-- end icon -->
+                                        
+                                    </div>
+                                    <!-- end not logged -->
+                                    
+                                    <!-- logged -->
+                                    <div class="logged d-3xl-none">
+                                        <div class="logged-container relative js__dropdownContainer">
+                                            <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                                <h3 class="text fs-14 fw-700 mr-8 d-sm-none">Thanh Hoài</h3>
+                                                <div class="avatar mr-4">
+                                                    <img src="./images/3.jpg" alt="">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./images/svg/triangle-down-gray.svg" alt="">
+                                                </div>
+                                            </div>
+                
+                                            <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                                <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                                <li class="logged-item log-out">Đăng xuất</li>
+                                            </ul>
+                
+                                            <div class="overlay js__overlay"></div>
+                                        </div>
+                                    </div>
+                                    <!-- end logged -->
+                                </div>
+                                <!-- end login -->
+                            </div>
+                            <!-- end right -->
+                        </div>
+                    </div>
+                   <!-- end bot -->
+                </div>
+            </div>
+            <!-- end mb -->
+
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+
+            <!-- desk top -->
+            <div class="d-3xl-block d-md-none">
+                <!-- breadcrumb tertiary -->
+                <div class="breadcrumb-tertiary relative w-wrapper z-10 over-hidden py-20">
+                    <div class="breadcrumb-tertiary__container w-1140 w-md-500 border-b-00 pb-10 d-3xl-flex items-center">
+                        <h2 class="heading-one flex-0 fs-20 fw-700 text-red-b80 uppercase">
+                            <a href="#">Media</a>
+                        </h2>
+                        <div class="heading-slide js__autoSlideContainer ml-20 flex-1" style="max-width: 100%;">
+                            <div class="swiper js__swiperAuto fs-16 uppercase">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">An toàn thực phẩm</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">Nói không với hàng giả</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">Tiêu dùng địa phương</a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">Cảnh báo tiêu dùng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end breadcrumb tertiary -->
+                
+                <!-- octonary -->
+                <section class="section-octonary relative z-10 over-hidden w-wrapper mb-30">
+                    <div class="section-octonary__container w-1140 w-md-500">
+    
+                        <!-- top -->
+                        <div class="section-octonary__top pb-20 border-b-8030">
+                            <!-- large -->
+                            <div class="article-large d-3xl-flex">
+                                <!-- img -->
+                                <div class="article-img flex-0 w-65">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                        <div class="play-medium">
+                                            <img src="./images/svg/play.svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content flex-1 bg-white p-20">
+                                    <h3 class="article-title fs-32 fw-700 lh-130">
+                                        <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                    </h3>
+                                    <div class="article-des fs-16 text-gray-55 lh-130 mt-12">
+                                        <p class="fix-text4">
+                                            Là đất nước sản xuất muối tiềm
+                                            năng, nhưng mỗi năm Việt Nam vẫn
+                                            phải nhập khẩu muối để đáp ứng
+                                            nhu cầu trong nước. Muối nội địa
+                                            có giá thành cao, chất lượng
+                                            thấp, rất khó cạnh tranh với
+                                            muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                    </div>
+                                    <div class="view-public d-3xl-flex items-center text-gray-82 mt-12">
+                                        <div class="icon icon-16">
+                                            <img src="./images/svg/eye-gray.svg" alt="">
+                                        </div>
+                                        <span class="text fs-13 ml-8">8.3k Lượt xem</span>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end large -->
+    
+                            <!-- smalls -->
+                            <div class="article-smalls mt-24 d-3xl-grid col-3 gap-24">
+                                <!-- article -->
+                                <div class="article">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-16x9">
+                                            <img src="./images/2.jpg" alt="">
+                                            <div class="play-small">
+                                                <img src="./images/svg/play.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content pt-12">
+                                        <h3 class="article-title fs-18 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        <div class="view-public d-3xl-flex items-center text-gray-82 mt-12">
+                                            <div class="icon icon-16">
+                                                <img src="./images/svg/eye-gray.svg" alt="">
+                                            </div>
+                                            <span class="text fs-13 ml-8">8.3k Lượt xem</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-16x9">
+                                            <img src="./images/2.jpg" alt="">
+                                            <div class="play-small">
+                                                <img src="./images/svg/play.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content pt-12">
+                                        <h3 class="article-title fs-18 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        <div class="view-public d-3xl-flex items-center text-gray-82 mt-12">
+                                            <div class="icon icon-16">
+                                                <img src="./images/svg/eye-gray.svg" alt="">
+                                            </div>
+                                            <span class="text fs-13 ml-8">8.3k Lượt xem</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-16x9">
+                                            <img src="./images/2.jpg" alt="">
+                                            <div class="play-small">
+                                                <img src="./images/svg/play.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content pt-12">
+                                        <h3 class="article-title fs-18 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        <div class="view-public d-3xl-flex items-center text-gray-82 mt-12">
+                                            <div class="icon icon-16">
+                                                <img src="./images/svg/eye-gray.svg" alt="">
+                                            </div>
+                                            <span class="text fs-13 ml-8">8.3k Lượt xem</span>
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                
+                            </div>
+                            <!-- end smalls -->
+                        </div>
+                        <!-- end top -->
+    
+                        <!-- center -->
+                        <div class="section-octonary__center border-b-e5 d-3xl-grid col-2">
+                            <!-- box fourth -->
+                            <div class="box-fourth py-20 px-30 border-b-8030">
+                                <!-- heading -->
+                                <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase"><a href="#">Podcast</a></h2>
+                                <!-- end heading -->
+    
+                                <!-- content -->
+                                <div class="box-fourth__content d-3xl-grid col-2 gap-16 mt-16">
+                                    <!-- large -->
+                                    <div class="article-large">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="ratio-16x9">
+                                                <img src="./images/2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-12">
+                                            <h3 class="article-title fs-20 fw-600 lh-130">
+                                                <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                            </h3>
+                                            <div class="article-action d-3xl-flex items-center mt-12">
+                                                <div class="count-time d-3xl-flex items-center fs-12 text-gray-66 mr-20">
+                                                    <span class="text d-3xl-inline-block">21 phút</span>
+                                                    <div class="ml-8 icon play-rounded-small-red">
+                                                        <img src="images/svg/play-red.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="count-cmt d-3xl-flex items-center fs-12 text-gray-66">
+                                                    <div class="icon mr-8 icon-12">
+                                                        <img src="images/svg/cmt-gray.svg" alt="">
+                                                    </div>
+                                                    <span class="text d-3xl-inline-block">120</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                    <!-- end large -->
+    
+                                    <!-- smalls -->
+                                    <div class="article-smalls last-child-empty-border-b">
+                                        <!-- article -->
+                                        <div class="article d-3xl-flex py-15 border-b-8030">
+                                            <!-- content -->
+                                            <div class="article-content flex-1 pr-10">
+                                                <h3 class="article-title fs-15 fw-600 lh-130">
+                                                    <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                                </h3>
+                                                <div class="article-action d-3xl-flex items-center mt-12">
+                                                    <div class="count-time d-3xl-flex items-center fs-12 text-gray-66 mr-20">
+                                                        <span class="text d-3xl-inline-block">21 phút</span>
+                                                        <div class="ml-8 icon play-rounded-small-red">
+                                                            <img src="images/svg/play-red.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="count-cmt d-3xl-flex items-center fs-12 text-gray-66">
+                                                        <div class="icon mr-8 icon-12">
+                                                            <img src="images/svg/cmt-gray.svg" alt="">
+                                                        </div>
+                                                        <span class="text d-3xl-inline-block">120</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end content -->
+                                            <!-- img -->
+                                            <div class="article-img flex-0 w-30">
+                                                <a href="#" class="ratio-1x1">
+                                                    <img src="./images/2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- end img -->
+                                        </div>
+                                        <!-- end article -->
+                                        <!-- article -->
+                                        <div class="article d-3xl-flex py-15 border-b-8030">
+                                            <!-- content -->
+                                            <div class="article-content flex-1 pr-10">
+                                                <h3 class="article-title fs-15 fw-600 lh-130">
+                                                    <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                                </h3>
+                                                <div class="article-action d-3xl-flex items-center mt-12">
+                                                    <div class="count-time d-3xl-flex items-center fs-12 text-gray-66 mr-20">
+                                                        <span class="text d-3xl-inline-block">21 phút</span>
+                                                        <div class="ml-8 icon play-rounded-small-red">
+                                                            <img src="images/svg/play-red.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="count-cmt d-3xl-flex items-center fs-12 text-gray-66">
+                                                        <div class="icon mr-8 icon-12">
+                                                            <img src="images/svg/cmt-gray.svg" alt="">
+                                                        </div>
+                                                        <span class="text d-3xl-inline-block">120</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- end content -->
+                                            <!-- img -->
+                                            <div class="article-img flex-0 w-30">
+                                                <a href="#" class="ratio-1x1">
+                                                    <img src="./images/2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- end img -->
+                                        </div>
+                                        <!-- end article -->
+                                    </div>
+                                    <!-- end smalls -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end box fourth -->
+    
+                            <!-- box fifth -->
+                            <div class="box-fifth py-20 px-30 border-b-8030">
+                                <!-- heading -->
+                                <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase"><a href="#">Photo</a></h2>
+                                <!-- end heading -->
+    
+                                <!-- content -->
+                                <div class="box-fourth__content d-3xl-grid col-2 gap-20 mt-16">
+                                    <!-- article -->
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="ratio-16x9">
+                                                <img src="./images/2.jpg" alt="">
+                                                <div class="camera-small">
+                                                    <img src="./images/svg/camera.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-12">
+                                            <h3 class="article-title fs-20 fw-600 lh-130">
+                                                <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                            </h3>
+                                            
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                    <!-- end article -->
+    
+                                    <!-- article -->
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="ratio-16x9">
+                                                <img src="./images/2.jpg" alt="">
+                                                <div class="camera-small">
+                                                    <img src="./images/svg/camera.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content mt-12">
+                                            <h3 class="article-title fs-20 fw-600 lh-130">
+                                                <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                            </h3>
+                                            
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                    <!-- end article -->
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end box fifth -->
+                        </div>
+                        <!-- end center -->
+    
+                        <!-- bot -->
+                        <div class="section-octonary__center mt-20">
+                            <!-- heading -->
+                            <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase"><a href="#">Short video</a></h2>
+                            <!-- end heading -->
+    
+                            <!-- content -->
+                            <div class="short-video__content d-3xl-grid col-5 gap-20 mt-20">
+                                <!-- article -->
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-2x3">
+                                            <img src="./images/2.jpg" alt="" class="">
+                                        </a>
+                                    </div>
+                                    <!-- img -->
+                                    <!-- content -->
+                                    <div class="article-content absolute article-content-absolute-bottom py-10 px-15">
+                                        <h3 class="article-title fs-15 text-white fw-600">
+                                            <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                            <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                            <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                        </a>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-2x3">
+                                            <img src="./images/2.jpg" alt="" class="">
+                                        </a>
+                                    </div>
+                                    <!-- img -->
+                                    <!-- content -->
+                                    <div class="article-content absolute article-content-absolute-bottom py-10 px-15">
+                                        <h3 class="article-title fs-15 text-white fw-600">
+                                            <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                            <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                            <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                        </a>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-2x3">
+                                            <img src="./images/2.jpg" alt="" class="">
+                                        </a>
+                                    </div>
+                                    <!-- img -->
+                                    <!-- content -->
+                                    <div class="article-content absolute article-content-absolute-bottom py-10 px-15">
+                                        <h3 class="article-title fs-15 text-white fw-600">
+                                            <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                            <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                            <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                        </a>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-2x3">
+                                            <img src="./images/2.jpg" alt="" class="">
+                                        </a>
+                                    </div>
+                                    <!-- img -->
+                                    <!-- content -->
+                                    <div class="article-content absolute article-content-absolute-bottom py-10 px-15">
+                                        <h3 class="article-title fs-15 text-white fw-600">
+                                            <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                            <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                            <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                        </a>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article relative">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-2x3">
+                                            <img src="./images/2.jpg" alt="" class="">
+                                        </a>
+                                    </div>
+                                    <!-- img -->
+                                    <!-- content -->
+                                    <div class="article-content absolute article-content-absolute-bottom py-10 px-15">
+                                        <h3 class="article-title fs-15 text-white fw-600">
+                                            <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                            </a>
+                                        </h3>
+                                        <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                            <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                            <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                        </a>
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                            </div>
+                            <!-- end content -->
+                        </div>
+                        <!-- end bot -->
+                    </div>
+                </section>
+                <!-- end octonary -->
+    
+                <!-- nonary -->
+                <section class="section-nonary relative z-10 over-hidden w-wrapper my-30">
+                    <div class="section-nonary__container w-1140 w-md-500">
+                        <!-- heading -->
+                        <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase pt-10 border-t-e5"><a href="#">E-magazine</a></h2>
+                        <!-- end heading -->
+    
+                        <!-- content -->
+                        <div class="section-nonary__content d-3xl-grid col-3 ml-3xl-n15 mr-3xl-n15 mt-20">
+                            <!-- article -->
+                            <div class="article px-15 border-r-e5">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content pt-12">
+                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                        <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                        </a>
+                                    </h3>
+                                    <div class="article-des fs-16 text-gray-44 lh-130 mt-10">
+                                        <p class="fix-text4">
+                                            Là đất nước sản xuất muối tiềm
+                                            năng, nhưng mỗi năm Việt Nam vẫn
+                                            phải nhập khẩu muối để đáp ứng
+                                            nhu cầu trong nước. Muối nội địa
+                                            có giá thành cao, chất lượng
+                                            thấp, rất khó cạnh tranh với
+                                            muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article px-15 border-r-e5">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content pt-12">
+                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                        <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                        </a>
+                                    </h3>
+                                    <div class="article-des fs-16 text-gray-44 lh-130 mt-10">
+                                        <p class="fix-text4">
+                                            Là đất nước sản xuất muối tiềm
+                                            năng, nhưng mỗi năm Việt Nam vẫn
+                                            phải nhập khẩu muối để đáp ứng
+                                            nhu cầu trong nước. Muối nội địa
+                                            có giá thành cao, chất lượng
+                                            thấp, rất khó cạnh tranh với
+                                            muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article px-15 border-r-e5">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content pt-12">
+                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                        <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                        </a>
+                                    </h3>
+                                    <div class="article-des fs-16 text-gray-44 lh-130 mt-10">
+                                        <p class="fix-text4">
+                                            Là đất nước sản xuất muối tiềm
+                                            năng, nhưng mỗi năm Việt Nam vẫn
+                                            phải nhập khẩu muối để đáp ứng
+                                            nhu cầu trong nước. Muối nội địa
+                                            có giá thành cao, chất lượng
+                                            thấp, rất khó cạnh tranh với
+                                            muối nhập khẩu nên khó tiêu thụ.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end article -->
+    
+                        </div>
+                        <!-- end content -->
+                    </div>
+                </section>
+                <!-- end nonary -->
+    
+                <!-- decenary -->
+                <section class="section-decenary relative z-10 over-hidden w-wrapper pb-20">
+                    <div class="section-decenary__container w-1140 w-md-500">
+                        <!-- heading -->
+                        <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase pt-10 border-t-e5"><a href="#">Longform</a></h2>
+                        <!-- end heading -->
+    
+                        <!-- content -->
+                        <div class="section-decenary__content d-3xl-grid col-2 gap-30 mt-20 border-b-e5 pb-20">
+                            <!-- large -->
+                            <div class="section-decenary__large">
+                                <div class="article">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-16x9">
+                                            <img src="./images/2.jpg" alt="">
+                                            
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content pt-12">
+                                        <h3 class="article-title fs-32 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                            </div>
+                            <!-- end large -->
+    
+                            <!-- smalls -->
+                            <div class="section-decenary__smalls d-3xl-grid col-2 gap-30">
+                                <!-- left -->
+                                <div class="left last-child-empty-border-b">
+                                    <!-- article -->
+                                    <div class="article py-20 border-b-e5">
+                                        <!-- content -->
+                                        <div class="article-content">
+                                            <h3 class="article-title fs-20 fw-600 lh-130">
+                                                <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                                </a>
+                                            </h3>
+                                            <div class="article-des fs-16 text-gray-44 lh-130 mt-10">
+                                                <p class="fix-text4">
+                                                    Là đất nước sản xuất muối tiềm
+                                                    năng, nhưng mỗi năm Việt Nam vẫn
+                                                    phải nhập khẩu muối để đáp ứng
+                                                    nhu cầu trong nước. Muối nội địa
+                                                    có giá thành cao, chất lượng
+                                                    thấp, rất khó cạnh tranh với
+                                                    muối nhập khẩu nên khó tiêu thụ.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                    <!-- end article -->
+                                    <!-- article -->
+                                    <div class="article py-20 border-b-e5">
+                                        <!-- content -->
+                                        <div class="article-content">
+                                            <h3 class="article-title fs-20 fw-600 lh-130">
+                                                <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                                </a>
+                                            </h3>
+                                            <div class="article-des fs-16 text-gray-44 lh-130 mt-10">
+                                                <p class="fix-text4">
+                                                    Là đất nước sản xuất muối tiềm
+                                                    năng, nhưng mỗi năm Việt Nam vẫn
+                                                    phải nhập khẩu muối để đáp ứng
+                                                    nhu cầu trong nước. Muối nội địa
+                                                    có giá thành cao, chất lượng
+                                                    thấp, rất khó cạnh tranh với
+                                                    muối nhập khẩu nên khó tiêu thụ.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                    <!-- end article -->
+                                </div>
+                                <!-- end left -->
+    
+                                <!-- right -->
+                                <div class="right">
+                                    <!-- article -->
+                                    <div class="article">
+                                        <!-- img -->
+                                        <div class="article-img">
+                                            <a href="#" class="ratio-16x9">
+                                                <img src="./images/2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <!-- end img -->
+                                        <!-- content -->
+                                        <div class="article-content pt-12">
+                                            <h3 class="article-title fs-20 fw-600 lh-130">
+                                                <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                                </a>
+                                            </h3>
+                                            <div class="article-des fs-16 text-gray-44 lh-130 mt-10">
+                                                <p class="fix-text5">
+                                                    Là đất nước sản xuất muối tiềm
+                                                    năng, nhưng mỗi năm Việt Nam vẫn
+                                                    phải nhập khẩu muối để đáp ứng
+                                                    nhu cầu trong nước. Muối nội địa
+                                                    có giá thành cao, chất lượng
+                                                    thấp, rất khó cạnh tranh với
+                                                    muối nhập khẩu nên khó tiêu thụ.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- end content -->
+                                    </div>
+                                    <!-- end article -->
+                                </div>
+                                <!-- end right -->
+                            </div>
+                            <!-- end smalls -->
+                        </div>
+                        <!-- end content -->
+                    </div>
+                </section>
+                <!-- end decenary -->
+    
+                <!-- ads center -->
+                <div class="ads-center py-20 w-1140 border-b-e5">
+                    <img src="./images/ads_center.png" alt="">
+                </div>
+                <!-- end ads center -->
+            </div>
+            <!-- end desk top -->
+
+            <!-- mobile -->
+            <div class="d-3xl-none d-md-block">
+                <!-- navbar menu mb -->
+                <div class="navbar-menu-mb js__navbarMenuMb py-12 pl-15 pr-40 relative border-b-e5">
+                    <ul class="navbar-mb js__navbarMb d-3xl-flex items-center fs-14 uppercase">
+                        <li class="navbar-item">
+                            <a href="#">Media</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Giáo dục</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Sức khỏe</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Sự kiện</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-scroll-icon js__navbarIcon">
+                        <img src="./images/svg/Union.svg" alt="">
+                    </div>
+                </div>
+                <!-- end navbar menu mb -->
+
+                <!-- twelve mb-->
+                <section class="section-twelve-mb relative z-10 over-hidden w-wrapper mb-30 bg-white-f6 pb-20">
+                    <div class="section-twelve-mb__container w-1140 w-md-500">
+                        
+
+                        <!-- top -->
+                        <div class="section-twelve-mb__top">
+                            <!-- large -->
+                            <div class="article-large ml-3xl-n15 mr-3xl-n15">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                        <div class="play-medium">
+                                            <img src="./images/svg/play.svg" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content pt-10 px-15 bg-white pb-15">
+                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                        <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                        </a>
+                                    </h3>
+                                    <div class="view-public d-3xl-flex items-center text-gray-82 mt-12">
+                                        <div class="icon icon-16">
+                                            <img src="./images/svg/eye-gray.svg" alt="">
+                                        </div>
+                                        <span class="text fs-13 ml-8">8.3k Lượt xem</span>
+                                    </div>
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end large -->
+
+                            <!-- smalls -->
+                            <div class="article-smalls d-3xl-grid col-2 article-gap-10 mt-8 pb-15">
+                                <!-- article -->
+                                <div class="article py-10">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-16x9">
+                                            <img src="./images/2.jpg" alt="">
+                                            <div class="play-small">
+                                                <img src="./images/svg/play.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content pt-10">
+                                        <h3 class="article-title fs-14 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article py-10">
+                                    <!-- img -->
+                                    <div class="article-img">
+                                        <a href="#" class="ratio-16x9">
+                                            <img src="./images/2.jpg" alt="">
+                                            <div class="play-small">
+                                                <img src="./images/svg/play.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- end img -->
+                                    <!-- content -->
+                                    <div class="article-content pt-10">
+                                        <h3 class="article-title fs-14 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                
+                            </div>
+                            <!-- end smalls -->
+                        </div>
+                        <!-- end top -->
+
+                        <!-- photo -->
+                        <div class="section-twelve-mb__photo mt-20 relative pagi-secondary pb-20 border-b-e5">
+                            <!-- heading -->
+                            <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase"><a href="#">Photo</a></h2>
+                            <!-- end heading -->
+
+                            <!-- list -->
+                            <div class="box-slide mt-20 js__oneSlidesContainer">
+                                <div class="swiper js__oneSlide">
+                                    <div class="swiper-wrapper">
+                                        <!-- slide -->
+                                        <div class="swiper-slide">
+                                            <!-- article -->
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article-img">
+                                                    <a href="#" class="ratio-16x9">
+                                                        <img src="./images/2.jpg" alt="">
+                                                        <div class="camera-small">
+                                                            <img src="./images/svg/camera.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div class="article-content mt-12">
+                                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                                        <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                                    </h3>
+                                                    
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                            <!-- end article -->
+                                        </div>
+                                        <!-- end slide -->
+                                        <!-- slide -->
+                                        <div class="swiper-slide">
+                                            <!-- article -->
+                                            <div class="article">
+                                                <!-- img -->
+                                                <div class="article-img">
+                                                    <a href="#" class="ratio-16x9">
+                                                        <img src="./images/2.jpg" alt="">
+                                                        <div class="camera-small">
+                                                            <img src="./images/svg/camera.svg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div class="article-content mt-12">
+                                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                                        <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                                    </h3>
+                                                    
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                            <!-- end article -->
+                                        </div>
+                                        <!-- end slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end list -->
+                        </div>
+                        <!-- end photo -->
+
+                        <!-- podcast -->
+                        <div class="section-twelve-mb__podcast mt-20 relative pagi-secondary pb-20 border-b-e5">
+                            <!-- heading -->
+                            <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase"><a href="#">Podcast</a></h2>
+                            <!-- end heading -->
+
+                            <!-- list -->
+                            <div class="box-slide mt-20 js__oneSlidesContainer">
+                                <div class="swiper js__oneSlide">
+                                    <div class="swiper-wrapper">
+                                        <!-- slide -->
+                                        <div class="swiper-slide">
+                                            <!-- article -->
+                                            <div class="article d-3xl-flex">
+                                                <!-- img -->
+                                                <div class="article-img flex-0 w-30">
+                                                    <a href="#" class="ratio-1x1">
+                                                        <img src="./images/2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div class="article-content flex-1 pl-10">
+                                                    <h3 class="article-title fs-17 fw-600 lh-130">
+                                                        <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                                    </h3>
+                                                    <div class="article-action d-3xl-flex items-center mt-12">
+                                                        <div class="count-time d-3xl-flex items-center fs-12 text-gray-66 mr-20">
+                                                            <span class="text d-3xl-inline-block">21 phút</span>
+                                                            <div class="ml-8 icon play-rounded-small-red">
+                                                                <img src="images/svg/play-red.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="count-cmt d-3xl-flex items-center fs-12 text-gray-66">
+                                                            <div class="icon mr-8 icon-12">
+                                                                <img src="images/svg/cmt-gray.svg" alt="">
+                                                            </div>
+                                                            <span class="text d-3xl-inline-block">120</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                            <!-- end article -->
+                                        </div>
+                                        <!-- end slide -->
+                                        <!-- slide -->
+                                        <div class="swiper-slide">
+                                            <!-- article -->
+                                            <div class="article d-3xl-flex">
+                                                <!-- img -->
+                                                <div class="article-img flex-0 w-30">
+                                                    <a href="#" class="ratio-1x1">
+                                                        <img src="./images/2.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <!-- end img -->
+                                                <!-- content -->
+                                                <div class="article-content flex-1 pl-10">
+                                                    <h3 class="article-title fs-17 fw-600 lh-130">
+                                                        <a href="#" class="fix-text3">Thủ tướng yêu cầu xem xét tăng nhập khẩu điện từ Trung Quốc nếu cần</a>
+                                                    </h3>
+                                                    <div class="article-action d-3xl-flex items-center mt-12">
+                                                        <div class="count-time d-3xl-flex items-center fs-12 text-gray-66 mr-20">
+                                                            <span class="text d-3xl-inline-block">21 phút</span>
+                                                            <div class="ml-8 icon play-rounded-small-red">
+                                                                <img src="images/svg/play-red.svg" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="count-cmt d-3xl-flex items-center fs-12 text-gray-66">
+                                                            <div class="icon mr-8 icon-12">
+                                                                <img src="images/svg/cmt-gray.svg" alt="">
+                                                            </div>
+                                                            <span class="text d-3xl-inline-block">120</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                            <!-- end article -->
+                                        </div>
+                                        <!-- end slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end list -->
+                        </div>
+                        <!-- end podcast -->
+
+                        <!-- shortVideo -->
+                        <div class="section-twelve-mb__shortVideo mt-20 relative pagi-secondary">
+                            <!-- heading -->
+                            <h2 class="heading-secondary category fw-500 fs-13 text-gray-66 uppercase"><a href="#">Short Video</a></h2>
+                            <!-- end heading -->
+
+                            <!-- list -->
+                            <div class="box-slide mt-20 js__oneSlidesContainer">
+                                <div class="swiper js__oneSlide">
+                                    <div class="swiper-wrapper">
+                                        <!-- slide -->
+                                        <div class="swiper-slide">
+                                            <!-- article -->
+                                            <div class="article relative">
+                                                <!-- img -->
+                                                <div class="article-img">
+                                                    <a href="#" class="ratio-2x3">
+                                                        <img src="./images/2.jpg" alt="" class="">
+                                                    </a>
+                                                </div>
+                                                <!-- img -->
+                                                <!-- content -->
+                                                <div class="article-content absolute article-content-absolute-bottom py-20 px-15">
+                                                    <h3 class="article-title fs-22 text-white fw-600">
+                                                        <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                                        </a>
+                                                    </h3>
+                                                    <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                                        <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                                        <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                                    </a>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                            <!-- end article -->
+                                        </div>
+                                        <!-- end slide -->
+                                        <!-- slide -->
+                                        <div class="swiper-slide">
+                                            <!-- article -->
+                                            <div class="article relative">
+                                                <!-- img -->
+                                                <div class="article-img">
+                                                    <a href="#" class="ratio-2x3">
+                                                        <img src="./images/2.jpg" alt="" class="">
+                                                    </a>
+                                                </div>
+                                                <!-- img -->
+                                                <!-- content -->
+                                                <div class="article-content absolute article-content-absolute-bottom py-20 px-15">
+                                                    <h3 class="article-title fs-22 text-white fw-600">
+                                                        <a class="fix-text4" href="#"> Crystal Bay Card hợp tác toàn diện với Nha khoa Home
+                                                        </a>
+                                                    </h3>
+                                                    <a href="#" class="time-public d-3xl-flex items-center fs-13 mt-10">
+                                                        <span class="d-3xl-inline-block text-white">Sự kiện</span>
+                                                        <span class="d-3xl-inline-block fw-700 text-white">&nbsp;-&nbsp;7h</span>
+                                                    </a>
+                                                </div>
+                                                <!-- end content -->
+                                            </div>
+                                            <!-- end article -->
+                                        </div>
+                                        <!-- end slide -->
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <!-- end list -->
+                        </div>
+                        <!-- end shortVideo -->
+
+                    </div>
+                </section>
+                <!-- end twelve mb-->
+
+
+                <!-- septenary mb-->
+                <section class="section-septenary-mb relative z-10 over-hidden w-wrapper my-30 bg-white-f6 py-20">
+                    <div class="section-septenary-mb__container w-1140 w-md-500">
+                        <!-- heading -->
+                        <div class="heading-primary">
+                            <h2 class="heading-one flex-0 uppercase">
+                                <a href="#">E-magazine</a>
+                            </h2>
+                            
+                        </div>
+                        <!-- end heading -->
+
+                        <!-- top -->
+                        <div class="section-senary-mb__top mt-20">
+                            <!-- large -->
+                            <div class="article-large border-b-e5 pb-15 ml-3xl-n15 mr-3xl-n15">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content pt-10 px-15">
+                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                        <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                        </a>
+                                    </h3>
+                                    
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end large -->
+
+                            <!-- smalls -->
+                            <div class="article-smalls pt-15 last-child-empty-border-b">
+                                <!-- article -->
+                                <div class="article py-15 border-b-e5">
+                                    <!-- content -->
+                                    <div class="article-content">
+                                        <h3 class="article-title fs-17 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article py-15 border-b-e5">
+                                    <!-- content -->
+                                    <div class="article-content">
+                                        <h3 class="article-title fs-17 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                
+                            </div>
+                            <!-- end smalls -->
+                        </div>
+                        <!-- end top -->
+                    </div>
+                </section>
+                <!-- end septenary mb-->
+
+                <!-- septenary mb-->
+                <section class="section-septenary-mb relative z-10 over-hidden w-wrapper my-30 bg-white-f6 py-20">
+                    <div class="section-septenary-mb__container w-1140 w-md-500">
+                        <!-- heading -->
+                        <div class="heading-primary">
+                            <h2 class="heading-one flex-0 uppercase">
+                                <a href="#">Longform</a>
+                            </h2>
+                            
+                        </div>
+                        <!-- end heading -->
+
+                        <!-- top -->
+                        <div class="section-senary-mb__top mt-20">
+                            <!-- large -->
+                            <div class="article-large border-b-e5 pb-15 ml-3xl-n15 mr-3xl-n15">
+                                <!-- img -->
+                                <div class="article-img">
+                                    <a href="#" class="ratio-16x9">
+                                        <img src="./images/2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <!-- end img -->
+                                <!-- content -->
+                                <div class="article-content pt-10 px-15">
+                                    <h3 class="article-title fs-20 fw-600 lh-130">
+                                        <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                        </a>
+                                    </h3>
+                                    
+                                </div>
+                                <!-- end content -->
+                            </div>
+                            <!-- end large -->
+
+                            <!-- smalls -->
+                            <div class="article-smalls pt-15 last-child-empty-border-b">
+                                <!-- article -->
+                                <div class="article py-15 border-b-e5">
+                                    <!-- content -->
+                                    <div class="article-content">
+                                        <h3 class="article-title fs-17 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                <!-- article -->
+                                <div class="article py-15 border-b-e5">
+                                    <!-- content -->
+                                    <div class="article-content">
+                                        <h3 class="article-title fs-17 fw-600 lh-130">
+                                            <a href="#" class="">Cổ phiếu nhà sản xuất 'Anh trai vượt ngàn chông gai' tăng kịch trần
+                                            </a>
+                                        </h3>
+                                        
+                                    </div>
+                                    <!-- end content -->
+                                </div>
+                                <!-- end article -->
+                                
+                            </div>
+                            <!-- end smalls -->
+                        </div>
+                        <!-- end top -->
+                    </div>
+                </section>
+                <!-- end septenary mb-->
+
+                <!-- ads center -->
+                <div class="ads-center py-15 w-1140 border-b-e5">
+                    <img src="./images/ads_right_2.png" alt="">
+                </div>
+                <!-- end ads center -->
+
+            </div>
+            <!-- end mobile -->
+
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer w-wrapper z-20 relative px-15 pt-20 pb-40">
+            <!-- footer container -->
+            <div class="footer-container w-1140">
+                <!-- top -->
+                <div class="footer-top d-3xl-flex d-md-none items-center justify-between">
+                    <!-- left -->
+                    <div class="left d-3xl-flex items-center gap-8">
+                        <!-- search -->
+                        <div class="search-footer fs-14 mr-10">
+                            <form action="" class="relative">
+                                <input type="hidden" name="mod" value="archive">
+                                <input type="hidden" name="act" value="search">
+                                <input name="search" type="text" class="search-input fs-14 w-full h-full" placeholder="Tìm kiếm">
+                                <button class="search-btn">
+                                    <img src="./images/svg/search-gray.svg" loading="lazy" alt="" width="12" height="12">
+                                </button>
+                            </form>
+                        </div>
+                        <!-- end search -->
+
+                    </div>
+                    <!-- end left -->
+                    <!-- center -->
+                    <div class="logo-footer mx-auto">
+                        <a href="#" class="logo-link">
+                            <img src="./images/svg/logo-footer.svg" alt="" class="logo-img"/>
+                        </a>
+                    </div>
+
+                    <!-- end center -->
+                    <!-- right -->
+                    <div class="header-top__right d-3xl-flex items-center gap-20">
+                        <!-- social -->
+                        <ul class="social-footer d-3xl-flex items-center">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/fb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/tiktok-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/ytb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/twitter-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/instagram-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/zalo-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- end social -->
+
+                       
+                    </div>
+                    <!-- end right -->
+                </div>
+                <!-- end top -->
+
+                <!-- mb -->
+                <div class="footer-top d-3xl-none d-md-block border-b-e5 pb-20">
+                    <!-- logo -->
+                    <div class="logo-footer d-3xl-flex items-center justify-center">
+                        <a href="#" class="logo-link">
+                            <img
+                                src="./images/svg/logo-footer.svg"
+                                alt=""
+                                class="logo-img"
+                            />
+                        </a>
+                    </div>
+                    <!-- end logo -->
+
+                    <div class=" mt-20">
+                        <!-- hotline -->
+                        <a href="tel:0123456789" class="hotline d-3xl-flex items-center justify-center">
+                            <p class="fs-14">
+                                 <strong>Hotline: 0913011666 </strong>
+                            </p>
+                        </a>
+                        <!-- end hotline -->
+
+                        <!-- social -->
+                        <ul class="social-footer d-3xl-flex items-center justify-center mt-10">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/fb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/tiktok-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/ytb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/twitter-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/instagram-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/zalo-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- end social -->
+                    </div>
+                </div>
+                <!-- end mb -->
+
+                <!-- navbar -->
+                <nav class="navbar-footer d-md-none my-24 pb-24 border-b-00">
+                    <ul class="navbar-wrapper w-1140 d-3xl-flex items-center justify-between fw-700 fs-16">
+                        
+                        <li class="navbar-item">
+                            <a href="#">Xã hội</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Kinh doanh</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Tiêu dùng thông minh</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Giải trí</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Đời sống</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Thể thao</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Công nghệ - Xe</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Thế giới</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Chuyên gia</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Meida</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end navbar -->
+
+                <!-- footer content -->
+                <div class="footer-content d-3xl-grid d-md-block col-3 gap-30 fs-14 mt-24 fw-400 border-b-e5 pb-20 mb-20">
+                    <!-- left -->
+                    <div class="left">
+                        <p class="uppercase mb-8"><strong>Trang thông tin điện tử tổng hợp</strong></p>
+                        <p class="mb-8">
+                            Hội Chống gian lận thương mại và Hỗ trợ người tiêu dùng TP.HCM (AFCA)
+                        </p>
+                        <p class="mb-8">
+                            Giấy phép số 43/GP-STTTT, do Sở Thông tin và Truyền thông TP.HCM cấp ngày 12/9/2017
+                        </p>
+                        <p class="mb-8">Giám đốc điều hành: <strong>Nguyễn Huy Hoàng</strong></p>
+                        <p>Chịu trách nhiệm nội dung: <strong>Nhà báo Lê Thanh Tùng</strong></p>
+                    </div>
+                    <!-- end left -->
+                    <!-- center -->
+                    <div class="center">
+                        <p class="fw-700 mb-8">Thông tin liên hệ</p>
+                        <p class="mb-8"> Tòa soạn: 109 Tân Mỹ, phường Tân Thuận Tây, quận 7, TP.HCM</p>
+                        <p class="mb-8"> Hotline: 0913011666</p>
+                        <p class="mb-8"> Email: toasoan@vietpress.vn</p>
+                        
+                    </div>
+                    <!-- end center -->
+                    <!-- right -->
+                    <div class="right">
+                        <a href="#" class="btn mb-10 text-gray-33">Liên hệ quảng cáo: 0911279279</a>
+                        <form action="" class="register-email">
+                            <div class="register-email__group">
+                                <div class="register-email__icon">
+                                    <img
+                                        src="./images/svg/email-84.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    class="register-email__input"
+                                    placeholder="Nhập email của bạn"
+                                />
+                                <input
+                                    type="submit"
+                                    class="register-email__btn"
+                                    value="Đăng ký"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end right -->
+                </div>
+                <!-- end footer content -->
+
+                <div class="footer-text fs-14 text-gray-66">
+                    ® Bản quyền thuộc Vietpress.vn. Chỉ được đăng tải lại nội dung thông tin trên Vietpress.vn khi có sự đồng ý bằng văn bản của VietPress
+                </div>
+            </div>
+            <!-- end footer container -->
+            <!-- back top -->
+            <div id="back-top">
+                <img src="./images/svg/arrow-top-w.svg" alt="">
+            </div>
+            <!-- end back top -->
+
+            <!-- footer action -->
+            <div class="footer-action">
+                <ul class="footer-action__list">
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/gif.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/24h.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/fi-rr-play-alt.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/fi-rr-camera.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/user-her.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+            <!-- end footer action -->
+        </footer>
+        <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

@@ -568,6 +568,55 @@ document.addEventListener("DOMContentLoaded", function () {
             };
         });
     }
+     // Xử lý full screen emagazine
+    function handleFullScreenEma() {
+        var widthDoc = document.querySelector("body");
+        if(widthDoc){
+            var expNoEditFull = document.querySelectorAll('.expNoEdit.full');
+            expNoEditFull.forEach(function(a){
+              a.style.width = widthDoc.clientWidth + 'px';
+              a.style.marginLeft = '-' + a.offsetLeft + 'px';
+            })
+          }
+    }
+
+
+     // Xử lý audio
+    function handleAudio() {
+        var ranges = document.querySelectorAll('input[type="range"]');
+        var playsRadio = document.querySelectorAll(".js__playRadio");
+        var volumsRadio = document.querySelectorAll(".js__radioVolum");
+
+        // ranges
+        if (ranges) {
+            ranges.forEach(function (input) {
+                var valueRange = input.value + "%";
+                var maxRange = input.max + "%";
+                input.style.backgroundSize = `${valueRange} ${maxRange}`;
+                input.oninput = function (e) {
+                    var min = e.target.min;
+                    var max = e.target.max;
+                    var val = e.target.value;
+                    e.target.style.backgroundSize =
+                        ((val - min) * 100) / (max - min) + "% 100%";
+                };
+            });
+        }
+        if (playsRadio) {
+            playsRadio.forEach((playRadio) => {
+                playRadio.onclick = function () {
+                    this.classList.toggle("active");
+                };
+            });
+        }
+        if (volumsRadio) {
+            volumsRadio.forEach((volumRadio) => {
+                volumRadio.onclick = function () {
+                    this.classList.toggle("active");
+                };
+            });
+        }
+    }
 
     // Xử lý thanh header dính
     function handleStickyHeader() {
@@ -632,6 +681,8 @@ document.addEventListener("DOMContentLoaded", function () {
         handleBackTop();
         handleChangeTab();
         handleChangeFontSize();
+        handleFullScreenEma();
+        handleAudio();
         window.addEventListener('scroll',handleWindowScroll);
         window.addEventListener('resize',handleWindowScroll);
     }

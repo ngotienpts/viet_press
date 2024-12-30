@@ -86,7 +86,19 @@
     // --------------------------------------------------------------------cate
    
     // --------------------------------------------------------------------detail
-
+    .ema-primary {
+        .detail-content {
+            figure.expNoEdit.full,
+            figure.expNoEdit.left,
+            figure.expNoEdit.right {
+                max-width: 100% !important;
+                width: 100% !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                margin-bottom: 20px;
+            }
+        }
+    }
     // --------------------------------------------------------------------footer
 }
 
@@ -137,6 +149,33 @@
     // --------------------------------------------------------------------cate
     .cate-primary-mb {
         padding-top: 20px;
+    }
+    .artist-block {
+        &__filter {
+            .select-item {
+                margin-bottom: 10px;
+            }
+            .select-item,
+            .select-btn {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+        &__content {
+            grid-template-columns: repeat(2,1fr);
+
+            .article {
+                padding: 20px 0;
+                .author-secondary {
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .info-text {
+                        padding: 12px 0 0;
+                    }
+                }
+            }
+        }
     }
 
     // --------------------------------------------------------------------detail
@@ -225,6 +264,41 @@
   
     }
 
+    // detail podcast
+    .detail-podcast-primary {
+        &__container {
+            padding: 30px 20px;
+        }
+    }
+    .radio-control {
+        flex-direction: column;
+        padding-top: 0;
+
+        .radio-time-range {
+            margin-top: 12px;
+            width: 100%;
+        }
+
+        .ajust-volum {
+            position: relative;
+            &.active {
+                .radio-long-range {
+                    display: block;
+                }
+            }
+
+            .radio-long-range {
+                position: absolute;
+                bottom: 65px;
+                right: -25px;
+                transform: rotate(270deg);
+                width: 80px !important;
+                display: none;
+            }
+        }
+    }
+    
+
 
     // --------------------------------------------------------------------footer
     .footer-action {
@@ -285,12 +359,19 @@
     .cate-primary-mb {
         padding-top: 0;
     }
+    .artist-block__filter {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
 
     // --------------------------------------------------------------------detail
     .detail-title {
         font-size: 30px;
     }
     .detail-content {
+        h1 {
+            font-size: 30px;
+        }
 
         & figure {
             margin-bottom: 15px;
