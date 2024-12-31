@@ -49,7 +49,17 @@
     // --------------------------------------------------------------------cate
 
     // --------------------------------------------------------------------detail
-
+    // artist
+    .detail-artist-primary {
+        min-height: auto;
+        &__container {
+            position: relative;
+            transform: none;
+            top: auto;
+            left: auto;
+            padding: 20px 15px;
+        }
+    }
     // --------------------------------------------------------------------footer
 
 }
@@ -297,6 +307,8 @@
             }
         }
     }
+
+    
     
 
 
@@ -434,6 +446,23 @@
             justify-content: space-between;
         }
 
+        &--fix {
+            align-items: flex-start;
+            .detail-source {
+                margin-top: 0;
+            }   
+        }
+
+    }
+    // artist
+    
+
+    .detail-artist-secondary {
+        padding-top: 0;
+        .detail-content p, 
+        .detail-content li {
+            font-size: 17px;
+        }
     }
     // --------------------------------------------------------------------footer
     

@@ -1792,7 +1792,8 @@ p {
 }
 .header.sticky .header-desk-menu,
 .header.sticky .header-mb-bot,
-.header.sticky .header-desk-top--special {
+.header.sticky .header-desk-top--special,
+.header.sticky .header-mb--special {
   position: fixed;
   top: 0;
   left: 0;
@@ -3739,6 +3740,37 @@ p {
   -webkit-appearance: none;
 }
 
+.detail-artist-primary {
+  min-height: 300px;
+  overflow: hidden;
+}
+.detail-artist-primary__bg img {
+  width: 100%;
+  height: auto;
+}
+.detail-artist-primary__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px 0;
+}
+.detail-artist-primary__container .content {
+  max-width: 500px;
+}
+
+.detail-artist-secondary {
+  background-image: url("../images/bg-2.png");
+  background-repeat: no-repeat;
+}
+.detail-artist-secondary .detail-content h2, .detail-artist-secondary .detail-content h3, .detail-artist-secondary .detail-content h4, .detail-artist-secondary .detail-content h5, .detail-artist-secondary .detail-content h6 {
+  color: #b80000;
+}
+.detail-artist-secondary .detail-content figure figcaption h2, .detail-artist-secondary .detail-content figure figcaption h3, .detail-artist-secondary .detail-content figure figcaption h4, .detail-artist-secondary .detail-content figure figcaption h5, .detail-artist-secondary .detail-content figure figcaption h6 {
+  color: #333;
+}
+
 #back-top {
   position: fixed;
   right: 30px;
@@ -3908,6 +3940,17 @@ p {
   .logo img {
     height: 36px;
     width: auto;
+  }
+
+  .detail-artist-primary {
+    min-height: auto;
+  }
+  .detail-artist-primary__container {
+    position: relative;
+    transform: none;
+    top: auto;
+    left: auto;
+    padding: 20px 15px;
   }
 }
 @media (max-width: 1024px) {
@@ -4234,6 +4277,20 @@ p {
   .detail-author-source .detail-source {
     margin-top: 8px;
     justify-content: space-between;
+  }
+  .detail-author-source--fix {
+    align-items: flex-start;
+  }
+  .detail-author-source--fix .detail-source {
+    margin-top: 0;
+  }
+
+  .detail-artist-secondary {
+    padding-top: 0;
+  }
+  .detail-artist-secondary .detail-content p,
+.detail-artist-secondary .detail-content li {
+    font-size: 17px;
   }
 }
 @media (max-width: 400px) {

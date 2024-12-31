@@ -807,3 +807,53 @@
         }
     }
 }
+
+
+// artist
+.detail-artist-primary {
+    min-height: 300px;
+    overflow: hidden;
+    &__bg {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 20px 0;
+
+        .content {
+            max-width: 500px;
+        }
+    }
+}
+
+.detail-artist-secondary {
+    background-image: url('../images/bg-2.png');
+    background-repeat: no-repeat;
+
+    .detail-content {
+        &  h2,
+        &  h3,
+        &  h4,
+        &  h5,
+        &  h6 {
+            color: #b80000;
+        }
+
+        figure figcaption {
+            &  h2,
+            &  h3,
+            &  h4,
+            &  h5,
+            &  h6 {
+                color: #333;
+            } 
+        }
+    }
+}

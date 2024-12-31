@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./images/favicon/favicon.ico" type="image/gif" sizes="16x16" />
+        <!-- end favicon -->
+        <title>Trang thông tin tổng hợp VietPress</title>
+        <!-- font -->
+     
+        <!-- end font -->
+        <link rel="stylesheet" href="./lib/swiper/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script src="./lib/jquery/jquery-3.7.1.min.js"></script>
+    </head>
+
+    <body>
+        <!-- popup login -->
+        <div class="login" style="position: relative;z-index: 1000;">
+            <div class="not-logged">
+                <div class="js__popupLoginContainer">
+                    <div class="content text-white js__popupLogin">
+                        <!-- top -->
+                        <div class="content-top d-3xl-flex items-center justify-between border-b-e5 pb-16 w-full">
+                            <div class="content-top__logo">
+                                <img src="./images/svg/logo.svg" alt="">
+                            </div>
+                            <div class="content-top__close pointer js__closePopupLogin">
+                                <img src="./images/svg/close-gray.svg" alt="">
+                            </div>
+                        </div>
+                        <!-- end top -->
+        
+                        <!-- main -->
+                        <div class="content-main w-full js__loginContainerForm">
+                            <!-- login -->
+                            <div class="content-main__login active js__loginForm">
+                                <!-- heading -->
+                                <div class="heading d-3xl-flex items-center justify-center border-b-e5 w-full mt-20">
+                                    <span class="heading-1 fs-24 text-gray-66 active">Đăng nhập</span>
+                                    <span class="heading-2 fs-24 text-gray-66 js__registerBtn">Đăng ký</span>
+                                </div>
+                                <!-- end heading -->
+        
+                                <!--  -->
+                                <ul class="social d-3xl-flex justify-center d-md-none items-center my-16">
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/fb-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/twitter-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/instagram-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/zalo-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                   
+                                 </ul>
+                                <!--  -->
+        
+                                <div>
+                                    <p class="text-center fs-15 fw-600 lh-140 text-gray-44 mb-10 ">hoặc</p>
+                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 ">Vui lòng nhập thông tin cá nhân</p>
+                                </div>
+        
+                                <!-- form -->
+                                <div class="form form-container mb-10">
+                                    <form action="">
+                                        <div class="form-group mb-10">
+                                            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                                            <p class="mess-error">Tên đăng nhập không chính xác</p>
+                                        </div>
+                                        <div class="form-group mb-10">
+                                            <input type="password" class="form-input" placeholder="Mật khẩu">
+                                            <p class="mess-error">Mật khẩu không đúng</p>
+                                        </div>
+        
+                                        <button class="btn form-submit">Đăng nhập</button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+        
+                                <button class="btn btn-forgot js__forgotBtn">Quên mật khẩu</button>
+                            </div>
+                            <!-- end login -->
+                            <!-- register -->
+                            <div class="content-main__register js__registerForm">
+                                <!-- heading -->
+                                <div class="heading d-3xl-flex items-center justify-center border-b-e5 w-full mt-20">
+                                    <span class="heading-1 fs-24 fw-700 text-gray-66 js__loginBtn">Đăng nhập</span>
+                                    <span class="heading-2 fs-24 fw-700 text-gray-66 active">Đăng ký</span>
+                                </div>
+                                <!-- end heading -->
+        
+                                <!--  -->
+                                <ul class="social d-3xl-flex justify-center d-md-none items-center my-16">
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/fb-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/twitter-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/instagram-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                    <li class="social-item ml-8">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/zalo-gray.svg" alt="" loading="lazy">
+                                        </a>
+                                    </li>
+                                 </ul>
+                                <!--  -->
+        
+                                <div>
+                                    <p class="text-center fs-15 fw-600 lh-140 text-gray-44 mb-10 ">hoặc</p>
+                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 ">Vui lòng nhập thông tin cá nhân</p>
+                                </div>
+        
+                                <!-- form -->
+                                <div class="form form-container mb-10">
+                                    <form action="">
+                                        <div class="form-group mb-10">
+                                            <input type="text" class="form-input" placeholder="Tên đăng nhập">
+                                            <p class="mess-error">Tên đăng nhập không chính xác</p>
+                                        </div>
+                                        <div class="form-group mb-10">
+                                            <input type="password" class="form-input" placeholder="Mật khẩu">
+                                            <p class="mess-error">Mật khẩu không đúng</p>
+                                        </div>
+                                        <div class="form-group mb-10">
+                                            <input type="email" class="form-input" placeholder="Email">
+                                            <p class="mess-error">Email không hợp lệ</p>
+                                        </div>
+        
+                                        <button class="btn form-submit">Đăng ký</button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end register -->
+                            <!-- forgotpassword -->
+                            <div class="content-main__forgot js__forgotForm">
+                                <!-- heading -->
+                                <div class="heading d-3xl-flex items-center justify-center border-b-e5 w-full my-20">
+                                    <span class="heading-1 fs-24 fw-700 text-gray-66 active">Đặt lại mật khẩu</span>
+                                </div>
+                                <!-- end heading -->
+                                <div>
+                                    <p class="text-center fs-15 lh-140 text-gray-44 mb-10 ">Nhập email của bạn để lấy lại mật khẩu</p>
+                                </div>
+                                <!-- form -->
+                                <div class="form form-container mb-10">
+                                    <form action="">
+                                        <div class="form-group mb-10">
+                                            <input type="email" class="form-input" placeholder="Email">
+                                            <p class="mess-error">Email không đúng</p>
+                                        </div>
+        
+                                        <button class="btn form-submit">Lấy lại mật khẩu</button>
+                                    </form>
+                                </div>
+                                <!-- end form -->
+                            </div>
+                            <!-- end forgotpassword -->
+                        </div>
+                        <!-- end main -->
+                    </div>
+                    <div class="overlay js__overlay"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end popup login -->
+        <!-- header -->
+        <header id="header" class="header relative z-50 js__stickyHeader">
+            <!-- pc -->
+            <div class="d-3xl-block d-xl-none">
+                <div class="header-desk relative z-10">
+                    <!-- top -->
+                    <div class="header-desk-top header-desk-top--special bg-red-b80 w-wrapper">
+                        <div class="header-desk-top__container w-1140 d-3xl-flex items-center justify-between">
+                            <!-- left -->
+                            <div class="left d-3xl-flex items-center">
+                                <!-- extend bar -->
+                                <div class="navbar-more mr-10 js__navbarMore">
+                                    <!-- icon -->
+                                    <div class="navbar-more__icon icon-24 js__navbarMoreIcon">
+                                        <img src="./images/svg/bar-w.svg" alt="">
+                                    </div>
+                                    <!-- end icon -->
+                                    
+                                    <!-- content -->
+                                    <div class="navbar-more__content w-wrapper js__navbarMoreContent">
+                                        <div class="navbar-more__inner w-1140 scroll">
+                                            <ul class="navbar-more__list d-3xl-grid gap-24">
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="navbar-more__item">
+                                                    <div class="navbar-more__title"><a href="#">Cate 1</a></div>
+                                                    <ul class="navbar-more__children">
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                        <li><a href="#">Cate 2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- end content -->
+                                </div>
+                                <!-- end extend bar -->
+    
+                                <!-- logo and cate special-->
+                                <div class="logo-and-cate-special-header d-3xl-flex items-center">
+                                    <!-- logo -->
+                                    <div class="logo">
+                                        <a href="#">
+                                            <img src="./images/svg/logo-w.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end logo -->
+                                    <!-- cate -->
+                                    <ul class="cate-list text-white d-3xl-flex items-center">
+                                        <li class="cate-item fs-20 uppercase fw-700">
+                                            <a href="#" class="cate-link">Thư viện nghệ sĩ</a>
+                                        </li>
+                                    </ul>
+                                    <!-- end cate -->
+                                </div>
+                                <!-- end logo and cate special-->
+                            </div>
+                            <!-- end left -->
+
+                            <!-- right -->
+                            <div class="right d-3xl-flex items-center">
+                                <!-- social -->
+                                <ul class="social d-3xl-flex items-center">
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/fb-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/twitter-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/instagram-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    <li class="social-item">
+                                        <a href="#" class="social-link">
+                                            <img src="./images/svg/zalo-w.svg" loading="lazy" alt="" width="" height="">
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                                <!-- end social -->
+
+                                <!-- login -->
+                                <div class="login ml-16">
+                                    <!-- not logged -->
+                                    <div class="not-logged">
+                                        <!-- icon -->
+                                        <div class="login-icon js__showPopupLogin">
+                                            <img src="./images/svg/user-w.svg" alt="">
+                                        </div>
+                                        <!-- end icon -->
+                                        
+                                    </div>
+                                    <!-- end not logged -->
+                                    
+                                    <!-- logged -->
+                                    <div class="logged d-3xl-none">
+                                        <div class="logged-container relative js__dropdownContainer">
+                                            <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                                <h3 class="text fs-14 fw-700 mr-8 d-sm-none">Thanh Hoài</h3>
+                                                <div class="avatar mr-4">
+                                                    <img src="./images/3.jpg" alt="">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./images/svg/triangle-down-gray.svg" alt="">
+                                                </div>
+                                            </div>
+                
+                                            <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                                <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                                <li class="logged-item log-out">Đăng xuất</li>
+                                            </ul>
+                
+                                            <div class="overlay js__overlay"></div>
+                                        </div>
+                                    </div>
+                                    <!-- end logged -->
+                                </div>
+                                <!-- end login -->
+                            </div>
+                            <!-- end right -->
+                        </div>
+                    </div>
+                    <!-- end top -->
+                    
+                </div>
+            </div>
+            <!-- end pc -->
+             
+            <!-- mb -->
+            <div class="d-3xl-none d-xl-block">
+                <div class="header-mb header-mb--special relative z-10">
+                   <!-- top -->
+                    <div class="header-mb-top w-wrapper bg-red-b80">
+                        <div class="header-mb-top__container w-1140 d-3xl-flex items-center justify-between py-10">
+                            <!-- left -->
+                            <div class="left flex-0 mr-10">
+                                <!-- submenu -->
+                                <div class="sub-menu">
+                                    <!-- icon bar -->
+                                    <div class="icon-bar js__clickShowMenuMb">
+                                        <img src="./images/svg/bar-w.svg" alt="">
+                                    </div>
+                                    <!-- end icon bar -->
+                                    <!-- content -->
+                                    <div class="sub-menu__content">
+                                        <!-- close -->
+                                        <div class="sub-menu__close js__closeSubMenu d-3xl-flex items-center">
+                                            <img src="./images/svg/close-gray.svg" alt="">
+                                        </div>
+                                        <!-- end close -->
+    
+                                        <div class="sub-menu__container">
+                                            <!-- list -->
+                                            <div class="sub-menu__list">
+                                                <!-- item -->
+                                                <div class="sub-menu__item px-20">
+                                                    <!-- heading -->
+                                                    <div class="heading-sub d-3xl-flex items-center justify-between py-8 text-red-993">
+                                                        <h3 class="heading-sub__title fs-14 fw-500 uppercase">
+                                                            <a href="#">Tin tức</a>
+                                                        </h3>
+                                                        <div class="heading-sub__arrow js__dropDown">
+                                                            <img src="./images/svg/arrow-down-gray.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end heading -->
+    
+                                                    <!-- sub menu list -->
+                                                    <ul class="list-sub js__listSubMenu">
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- end sub menu list -->
+                                                </div>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <div class="sub-menu__item px-20">
+                                                    <!-- heading -->
+                                                    <div class="heading-sub d-3xl-flex items-center justify-between py-8 text-red-993">
+                                                        <h3 class="heading-sub__title fs-14 fw-500 uppercase">
+                                                            <a href="#">Tin tức</a>
+                                                        </h3>
+                                                        <div class="heading-sub__arrow js__dropDown">
+                                                            <img src="./images/svg/arrow-down-gray.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end heading -->
+    
+                                                    <!-- sub menu list -->
+                                                    <ul class="list-sub js__listSubMenu">
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- end sub menu list -->
+                                                </div>
+                                                <!-- end item -->
+                                                <!-- item -->
+                                                <div class="sub-menu__item px-20">
+                                                    <!-- heading -->
+                                                    <div class="heading-sub d-3xl-flex items-center justify-between py-8 text-red-993">
+                                                        <h3 class="heading-sub__title fs-14 fw-500 uppercase">
+                                                            <a href="#">Tin tức</a>
+                                                        </h3>
+                                                        <div class="heading-sub__arrow js__dropDown">
+                                                            <img src="./images/svg/arrow-down-gray.svg" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- end heading -->
+    
+                                                    <!-- sub menu list -->
+                                                    <ul class="list-sub js__listSubMenu">
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                        <li class="item-sub">
+                                                            <a href="#" class="item-sub__link fs-16">Release Calender</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- end sub menu list -->
+                                                </div>
+                                                <!-- end item -->
+                                               
+                                               
+                                            </div>
+                                            <!-- end list -->
+                                        </div>
+                                    </div>
+                                    <!-- end content -->
+                                    <div class="overlay js__overlay"></div>
+                                </div>
+                                <!-- end submenu -->
+                            </div>
+                            <!-- end left -->
+                            <!-- right -->
+                            <div class="right flex-1 d-3xl-flex items-center justify-between">
+                                <!--  -->
+                                <div class="logo-and-cate-special-header d-3xl-flex items-center">
+                                    <!-- logo -->
+                                    <div class="logo">
+                                        <a href="#">
+                                            <img src="./images/svg/logo-w.svg" alt="" style="height: 22px;">
+                                        </a>
+                                    </div>
+                                    <!-- end logo -->
+                                    <!-- cate -->
+                                    <ul class="cate-list text-white d-3xl-flex items-center">
+                                        <li class="cate-item fs-12 uppercase fw-700">
+                                            <a href="#" class="cate-link">Thư viện nghệ sĩ</a>
+                                        </li>
+                                    </ul>
+                                    <!-- end cate -->
+                                </div>
+                                <!--  -->
+                                <!-- login -->
+                                <div class="login ml-16">
+                                    <!-- not logged -->
+                                    <div class="not-logged">
+                                        <!-- icon -->
+                                        <div class="login-icon js__showPopupLogin">
+                                            <img src="./images/svg/user-w.svg" alt="">
+                                        </div>
+                                        <!-- end icon -->
+                                        
+                                    </div>
+                                    <!-- end not logged -->
+                                    
+                                    <!-- logged -->
+                                    <div class="logged d-3xl-none">
+                                        <div class="logged-container relative js__dropdownContainer">
+                                            <div class="logged-heading d-3xl-flex items-center js__showDropdown">
+                                                <h3 class="text fs-14 fw-700 mr-8 d-sm-none">Thanh Hoài</h3>
+                                                <div class="avatar mr-4">
+                                                    <img src="./images/3.jpg" alt="">
+                                                </div>
+                                                <div class="icon">
+                                                    <img src="./images/svg/triangle-down-gray.svg" alt="">
+                                                </div>
+                                            </div>
+                
+                                            <ul class="logged-content absolute dropdownContent js__dropdownContent">
+                                                <li class="logged-item"><a href="#" class="logged-link">Tài khoản</a></li>
+                                                <li class="logged-item log-out">Đăng xuất</li>
+                                            </ul>
+                
+                                            <div class="overlay js__overlay"></div>
+                                        </div>
+                                    </div>
+                                    <!-- end logged -->
+                                </div>
+                                <!-- end login -->
+                            </div>
+                            <!-- end right -->
+                        </div>
+                    </div>
+                   <!-- end top -->
+                  
+                </div>
+            </div>
+            <!-- end mb -->
+
+        </header>
+        <!-- end header -->
+        <!-- main -->
+        <main id="main" class="main">
+
+            <!-- artist block-->
+            <section class="section-octonary relative z-10 over-hidden w-wrapper mb-30">
+                <div class="section-octonary__container w-1140 w-md-500">
+                    
+                    <!-- filter -->
+                    <div class="artist-block__filter bg-white-f1 p-20">
+                        <h2 class="title fs-16 uppercase text-red-b80 mb-20">
+                            Tìm nghệ sĩ
+                        </h2>
+                        <form action="">
+                            <div class="select d-3xl-flex d-md-block items-center fs-16">
+                                <!-- item -->
+                                <div class="select-item w-full fs-16 bg-white flex-0 w-40">
+                                    <input type="text" class="w-full h-full select-item__input plceholder-black" placeholder="Tên">
+                                </div>
+                                <!-- end item -->
+                                <!-- item -->
+                                <select class="select-item w-full fs-16 bg-white flex-1">
+                                    <option value="0">Lựa chọn lĩnh vực</option>
+                                    <option value="1">Diễn viên</option>
+                                    <option value="2">Ca sĩ</option>
+                                    <option value="3">Người mẫu</option>
+                                    <option value="4">MC</option>
+                                </select>
+                                <!-- end item -->
+                                <button type="submit" class="select-btn flex-0 d-3xl-flex items-center justify-center bg-red-b80 cursor text-white fs-16">
+                                    <span>Xóa lọc</span>
+                                    <img src="./images/svg/delete.svg" alt="" class="ml-15">
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end filter -->
+                    
+                    <!-- bot -->
+                    <div class="artist-block__bot pb-20">
+                        <!-- content -->
+                        <div class="artist-block__content d-3xl-grid col-4 ml-3xl-n15 mr-3xl-n15">
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            <!-- article -->
+                            <div class="article relative mx-15 border-b-e5 py-30">
+                                <div class="author-secondary d-3xl-flex items-center">
+                                    <!-- avatar -->
+                                    <div class="avatar flex-0">
+                                        <a href="#" class="border-999 avatar-link ratio-1x1 over-hidden">
+                                            <img src="./images/2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- end avatar -->
+
+                                    <div class="info-text flex-1 pl-10">
+                                        <h3 class="name fs-17 fw-600">
+                                            <a href="#">Selena
+                                            </a>
+                                        </h3>
+                                        <h4 class="job fs-13 text-gray-66 mt-4">Diễn viên</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end article -->
+                            
+                        </div>
+                        <!-- end content -->
+
+                        <!-- pagination -->
+                        <ul class="pagination d-3xl-flex items-center justify-center fs-14 lh-160 uppercase fw-600 text-gray-66 mt-40">
+                            <li class="pagination-item active">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="#" class="pagination-link">01</a>
+                            </li>
+                        </ul>
+                        <!-- end pagination -->
+
+                        <!-- see more -->
+                        <div class="see-more d-3xl-flex items-center justify-center mt-40">
+                            <a href="#" class="see-more__link d-3xl-flex items-center btn uppercase fs-16">
+                                <span class="text flex-1 d-3xl-inline-block">Xem thêm</span>
+                                
+                            </a>
+                        </div>
+                        <!-- end see more -->
+                    </div>
+                    <!-- end bot -->
+
+                </div>
+            </section>
+            <!-- end twelve mb-->
+
+
+            <!-- ads center -->
+            <div class="ads-center py-15 w-1140 border-b-e5">
+                <img src="./images/ads_right_2.png" alt="">
+            </div>
+            <!-- end ads center -->
+
+
+        </main>
+        <!-- end main -->
+        <!-- footer -->
+        <footer id="footer" class="footer w-wrapper z-20 relative px-15 pt-20 pb-40">
+            <!-- footer container -->
+            <div class="footer-container w-1140">
+                <!-- top -->
+                <div class="footer-top d-3xl-flex d-md-none items-center justify-between">
+                    <!-- left -->
+                    <div class="left d-3xl-flex items-center gap-8">
+                        <!-- search -->
+                        <div class="search-footer fs-14 mr-10">
+                            <form action="" class="relative">
+                                <input type="hidden" name="mod" value="archive">
+                                <input type="hidden" name="act" value="search">
+                                <input name="search" type="text" class="search-input fs-14 w-full h-full" placeholder="Tìm kiếm">
+                                <button class="search-btn">
+                                    <img src="./images/svg/search-gray.svg" loading="lazy" alt="" width="12" height="12">
+                                </button>
+                            </form>
+                        </div>
+                        <!-- end search -->
+
+                    </div>
+                    <!-- end left -->
+                    <!-- center -->
+                    <div class="logo-footer mx-auto">
+                        <a href="#" class="logo-link">
+                            <img src="./images/svg/logo-footer.svg" alt="" class="logo-img"/>
+                        </a>
+                    </div>
+
+                    <!-- end center -->
+                    <!-- right -->
+                    <div class="header-top__right d-3xl-flex items-center gap-20">
+                        <!-- social -->
+                        <ul class="social-footer d-3xl-flex items-center">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/fb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/tiktok-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/ytb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/twitter-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/instagram-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/zalo-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- end social -->
+
+                       
+                    </div>
+                    <!-- end right -->
+                </div>
+                <!-- end top -->
+
+                <!-- mb -->
+                <div class="footer-top d-3xl-none d-md-block border-b-e5 pb-20">
+                    <!-- logo -->
+                    <div class="logo-footer d-3xl-flex items-center justify-center">
+                        <a href="#" class="logo-link">
+                            <img
+                                src="./images/svg/logo-footer.svg"
+                                alt=""
+                                class="logo-img"
+                            />
+                        </a>
+                    </div>
+                    <!-- end logo -->
+
+                    <div class=" mt-20">
+                        <!-- hotline -->
+                        <a href="tel:0123456789" class="hotline d-3xl-flex items-center justify-center">
+                            <p class="fs-14">
+                                 <strong>Hotline: 0913011666 </strong>
+                            </p>
+                        </a>
+                        <!-- end hotline -->
+
+                        <!-- social -->
+                        <ul class="social-footer d-3xl-flex items-center justify-center mt-10">
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/fb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/tiktok-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/ytb-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/twitter-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/instagram-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#" class="social-link">
+                                    <img src="./images/svg/zalo-gray.svg" loading="lazy" alt="" width="" height="">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                        <!-- end social -->
+                    </div>
+                </div>
+                <!-- end mb -->
+
+                <!-- navbar -->
+                <nav class="navbar-footer d-md-none my-24 pb-24 border-b-00">
+                    <ul class="navbar-wrapper w-1140 d-3xl-flex items-center justify-between fw-700 fs-16">
+                        
+                        <li class="navbar-item">
+                            <a href="#">Xã hội</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Kinh doanh</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Tiêu dùng thông minh</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Giải trí</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Đời sống</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Thể thao</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Công nghệ - Xe</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Thế giới</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Chuyên gia</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#">Meida</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- end navbar -->
+
+                <!-- footer content -->
+                <div class="footer-content d-3xl-grid d-md-block col-3 gap-30 fs-14 mt-24 fw-400 border-b-e5 pb-20 mb-20">
+                    <!-- left -->
+                    <div class="left">
+                        <p class="uppercase mb-8"><strong>Trang thông tin điện tử tổng hợp</strong></p>
+                        <p class="mb-8">
+                            Hội Chống gian lận thương mại và Hỗ trợ người tiêu dùng TP.HCM (AFCA)
+                        </p>
+                        <p class="mb-8">
+                            Giấy phép số 43/GP-STTTT, do Sở Thông tin và Truyền thông TP.HCM cấp ngày 12/9/2017
+                        </p>
+                        <p class="mb-8">Giám đốc điều hành: <strong>Nguyễn Huy Hoàng</strong></p>
+                        <p>Chịu trách nhiệm nội dung: <strong>Nhà báo Lê Thanh Tùng</strong></p>
+                    </div>
+                    <!-- end left -->
+                    <!-- center -->
+                    <div class="center">
+                        <p class="fw-700 mb-8">Thông tin liên hệ</p>
+                        <p class="mb-8"> Tòa soạn: 109 Tân Mỹ, phường Tân Thuận Tây, quận 7, TP.HCM</p>
+                        <p class="mb-8"> Hotline: 0913011666</p>
+                        <p class="mb-8"> Email: toasoan@vietpress.vn</p>
+                        
+                    </div>
+                    <!-- end center -->
+                    <!-- right -->
+                    <div class="right">
+                        <a href="#" class="btn mb-10 text-gray-33">Liên hệ quảng cáo: 0911279279</a>
+                        <form action="" class="register-email">
+                            <div class="register-email__group">
+                                <div class="register-email__icon">
+                                    <img
+                                        src="./images/svg/email-84.svg"
+                                        alt=""
+                                    />
+                                </div>
+                                <input
+                                    type="text"
+                                    class="register-email__input"
+                                    placeholder="Nhập email của bạn"
+                                />
+                                <input
+                                    type="submit"
+                                    class="register-email__btn"
+                                    value="Đăng ký"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                    <!-- end right -->
+                </div>
+                <!-- end footer content -->
+
+                <div class="footer-text fs-14 text-gray-66">
+                    ® Bản quyền thuộc Vietpress.vn. Chỉ được đăng tải lại nội dung thông tin trên Vietpress.vn khi có sự đồng ý bằng văn bản của VietPress
+                </div>
+            </div>
+            <!-- end footer container -->
+            <!-- back top -->
+            <div id="back-top">
+                <img src="./images/svg/arrow-top-w.svg" alt="">
+            </div>
+            <!-- end back top -->
+
+            <!-- footer action -->
+            <div class="footer-action">
+                <ul class="footer-action__list">
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/gif.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/24h.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/fi-rr-play-alt.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/fi-rr-camera.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="footer-action__item mb-4">
+                        <a href="#" class="footer-action__link icon-20">
+                            <img src="./images/svg/user-her.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+            <!-- end footer action -->
+        </footer>
+        <!-- end footer -->
+        <script src="./lib/swiper/swiper-bundle.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
