@@ -572,7 +572,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleFullScreenEma() {
         var widthDoc = document.querySelector("body");
         if(widthDoc){
-            var expNoEditFull = document.querySelectorAll('.expNoEdit.full');
+            var expNoEditFull = document.querySelectorAll('[view="lg"]');
             expNoEditFull.forEach(function(a){
               a.style.width = widthDoc.clientWidth + 'px';
               a.style.marginLeft = '-' + a.offsetLeft + 'px';
