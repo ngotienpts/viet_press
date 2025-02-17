@@ -3505,6 +3505,9 @@ p {
 .detail-content table td strong {
   color: #993333;
 }
+.detail-content table p {
+  word-break: normal;
+}
 
 .print-box .detail-content {
   padding-left: 0;
